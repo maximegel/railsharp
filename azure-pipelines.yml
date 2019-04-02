@@ -1,0 +1,66 @@
+# ASP.NET Core
+# Build and test ASP.NET Core projects targeting .NET Core.
+# Add steps that run tests, create a NuGet package, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+
+trigger:
+  batch: true
+  branches:
+    include:
+      - master
+      - develop
+  paths:
+    exclude:
+      - LICENSE
+      - README.md
+
+pool:
+  vmImage: 'Ubuntu-16.04'
+
+variables:
+  buildConfiguration: 'Release'
+  projectUrl: ''
+  licenseUrl: ''
+  iconUrl: ''
+  copyright: ''
+
+steps:
+- task: gittools.gitversion.gitversion-task.GitVersion@4
+  displayName: 'Set version'
+  inputs:
+    updateAssemblyInfo: true
+
+- task: DotNetCoreCLI@2
+  displayName: 'Build'
+  inputs:
+    command: build
+    projects: '**/*.csproj'
+    arguments: '--configuration $(buildConfiguration)'
+
+- task: DotNetCoreCLI@2
+  displayName: 'Test'
+  inputs:
+    command: test
+    projects: '**/*Tests/*.csproj'
+    arguments: '--configuration $(buildConfiguration) --collect "Code coverage"'
+
+- task: DotNetCoreCLI@2
+  displayName: 'Pack'
+  inputs:
+    command: pack
+    packagesToPack: '**/*.nuspec'
+    nobuild: true
+    buildProperties: 'version=$(GitVersion.NuGetVersionV2);authors=$(system.teamProject) Team;title=$(system.teamProject);projectUrl=$(projectUrl);licenseUrl=$(licenseUrl);iconUrl=$(iconUrl);requireLicenseAcceptance=false;copyright=$(copyright);configuration=$(buildConfiguration)'
+
+- task: CopyFiles@2
+  displayName: 'Copy build output to artifact staging directory'
+  inputs:
+    sourceFolder: '$(build.sourcesDirectory)'
+    contents: '**/bin/$(buildConfiguration)/**'
+    targetFolder: '$(build.artifactStagingDirectory)'
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish artifact'
+  inputs:
+    PathtoPublish: '$(build.artifactStagingDirectory)'
+
