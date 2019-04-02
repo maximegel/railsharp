@@ -19,44 +19,22 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
-  version: '0.1.0'
-  projectUrl: 'https://github.com/softframe/railsharp'
-  licenseUrl: 'https://github.com/softframe/railsharp/blob/master/LICENSE'
-  iconUrl: 'https://i.imgur.com/NvKVr6B.png'
-  copyright: 'Copyright (c) 2019 SoftFrame'
 
 steps:
-- task: DotNetCoreCLI@2
+- script: dotnet build -c $(buildConfiguration)
   displayName: 'Build'
-  inputs:
-    command: build
-    projects: '**/*.csproj'
-    arguments: '--configuration $(buildConfiguration)'
 
-- task: DotNetCoreCLI@2
+- script: dotnet test --collect "Code coverage" -l trx --no-build
   displayName: 'Test'
-  inputs:
-    command: test
-    projects: '**/*Tests/*.csproj'
-    arguments: '--configuration $(buildConfiguration) --collect "Code coverage"'
 
-- task: DotNetCoreCLI@2
+- task: PublishTestResults@2
+  displayName: 'Publish test results'
+  inputs:
+    testRunner: VSTest
+    testResultsFiles: '**/*.trx'
+
+- script: dotnet pack --include-source --include-symbols --no-build -o "$(build.artifactStagingDirectory)"
   displayName: 'Pack'
-  inputs:
-    command: pack
-    packagesToPack: '**/*.nuspec'
-    nobuild: true
-    buildProperties: 'version=$(version);authors=$(system.teamProject) Team;title=$(system.teamProject);projectUrl=$(projectUrl);licenseUrl=$(licenseUrl);iconUrl=$(iconUrl);requireLicenseAcceptance=false;copyright=$(copyright);configuration=$(buildConfiguration)'
-
-- task: CopyFiles@2
-  displayName: 'Copy build output to artifact staging directory'
-  inputs:
-    sourceFolder: '$(build.sourcesDirectory)'
-    contents: '**/bin/$(buildConfiguration)/**'
-    targetFolder: '$(build.artifactStagingDirectory)'
 
 - task: PublishBuildArtifacts@1
-  displayName: 'Publish artifact'
-  inputs:
-    PathtoPublish: '$(build.artifactStagingDirectory)'
-
+  displayName: 'Publish build artifacts'
