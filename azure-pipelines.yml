@@ -19,17 +19,13 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
-  projectUrl: ''
-  licenseUrl: ''
-  iconUrl: ''
-  copyright: ''
+  version: '0.1.0'
+  projectUrl: 'https://github.com/softframe/railsharp'
+  licenseUrl: 'https://github.com/softframe/railsharp/blob/master/LICENSE'
+  iconUrl: 'https://i.imgur.com/NvKVr6B.png'
+  copyright: 'Copyright (c) 2019 SoftFrame'
 
 steps:
-- task: gittools.gitversion.gitversion-task.GitVersion@4
-  displayName: 'Set version'
-  inputs:
-    updateAssemblyInfo: true
-
 - task: DotNetCoreCLI@2
   displayName: 'Build'
   inputs:
@@ -50,7 +46,7 @@ steps:
     command: pack
     packagesToPack: '**/*.nuspec'
     nobuild: true
-    buildProperties: 'version=$(GitVersion.NuGetVersionV2);authors=$(system.teamProject) Team;title=$(system.teamProject);projectUrl=$(projectUrl);licenseUrl=$(licenseUrl);iconUrl=$(iconUrl);requireLicenseAcceptance=false;copyright=$(copyright);configuration=$(buildConfiguration)'
+    buildProperties: 'version=$(version);authors=$(system.teamProject) Team;title=$(system.teamProject);projectUrl=$(projectUrl);licenseUrl=$(licenseUrl);iconUrl=$(iconUrl);requireLicenseAcceptance=false;copyright=$(copyright);configuration=$(buildConfiguration)'
 
 - task: CopyFiles@2
   displayName: 'Copy build output to artifact staging directory'
