@@ -19,7 +19,7 @@ steps:
 - script: cd src && dotnet build -c $(buildConfiguration)
   displayName: 'Build'
 
-- script: cd src && dotnet test --collect "Code coverage" -l trx --no-build
+- script: cd src && dotnet test -c $(buildConfiguration) --collect "Code coverage" -l trx --no-build
   displayName: 'Test'
 
 - task: PublishTestResults@2
@@ -28,7 +28,7 @@ steps:
     testRunner: VSTest
     testResultsFiles: '**/*.trx'
 
-- script: cd src && dotnet pack --include-source --include-symbols --no-build -o "$(build.artifactStagingDirectory)"
+- script: cd src && dotnet pack -c $(buildConfiguration) --include-source --include-symbols --no-build -o "$(build.artifactStagingDirectory)"
   displayName: 'Pack'
 
 - task: PublishBuildArtifacts@1
