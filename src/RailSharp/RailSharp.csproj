@@ -3,12 +3,13 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-    <Version>0.1.0</Version>
-    <Authors>maximegelinas</Authors>
-    <Company>SoftFrame</Company>
-    <Copyright>Copyright (c) 2019 SoftFrame</Copyright>
-    <PackageLicenseUrl>https://github.com/softframe/railsharp/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/softframe/railsharp</PackageProjectUrl>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <IsPackable>true</IsPackable>
+    <Description>A small railway oriented library that offers a simple implementation of the Option type and Result type in C#.</Description>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageTags>railway-oriented-programming; functionnal-programming; option-type; result-type; csharp; dotnet-standard</PackageTags>
   </PropertyGroup>
 
 </Project>

@@ -13,23 +13,37 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 variables:
-  buildConfiguration: 'Release'
+  configuration: 'Release'
+  prerelease: ci
 
 steps:
-- script: cd src && dotnet build -c $(buildConfiguration)
-  displayName: 'Build'
+  - task: DotNetCoreCLI@2
+    displayName: dotnet build
+    inputs:
+      command: build
+  
+  - task: DotNetCoreCLI@2
+    displayName: dotnet test
+    inputs:
+      command: test
+      projects: 'test/**/*.csproj'
 
-- script: cd src && dotnet test -c $(buildConfiguration) --collect "Code coverage" -l trx --no-build
-  displayName: 'Test'
+  - task: DotNetCoreCLI@2
+    displayName: dotnet pack
+    inputs:
+      command: pack
+      packDirectory: '$(build.artifactStagingDirectory)/packages'
+ 
+  - task: PublishBuildArtifacts@1
+    displayName: publish artifacts
+    #condition: $(and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master')))
+    inputs:
+      PathtoPublish: '$(build.artifactStagingDirectory)'
 
-- task: PublishTestResults@2
-  displayName: 'Publish test results'
-  inputs:
-    testRunner: VSTest
-    testResultsFiles: '**/*.trx'
-
-- script: cd src && dotnet pack -c $(buildConfiguration) --include-source --include-symbols --no-build -o "$(build.artifactStagingDirectory)"
-  displayName: 'Pack'
-
-- task: PublishBuildArtifacts@1
-  displayName: 'Publish build artifacts'
+  - task: DotNetCoreCLI@2
+    displayName: dotnet nuget push
+    #condition: $(and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master')))
+    inputs:
+      command: custom
+      custom: nuget
+      arguments: push $(build.artifactStagingDirectory)/packages/*.nupkg --source https://api.nuget.org/v3/index.json --no-service-endpoint --api-key $(nuget.apiKey)

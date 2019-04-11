@@ -1,0 +1,35 @@
+<Project>
+  <PropertyGroup>
+    <MsBuildAllProjects>$(MsBuildAllProjects);$(MsBuildThisFileFullPath)</MsBuildAllProjects>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <!-- Edit this value to change the current major.minor version. -->
+    <VersionPrefix>0.1</VersionPrefix>
+    <Authors>maximegelinas</Authors>
+    <Copyright>Copyright (c) 2018 SoftFrame</Copyright>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIconUrl>https://imgur.com/T4erGVt.png</PackageIconUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <IncludeSource>true</IncludeSource>
+    <RepositoryUrl>https://github.com/softframe/railsharp</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Company>SoftFrame</Company>
+  </PropertyGroup>
+
+  <Choose>
+    <When Condition="'$(prerelease)' != ''">
+      <PropertyGroup>
+        <!-- Prerelease version numbers are "MAJOR.MINOR.0-PRERELEASE-build######" -->
+        <VersionSuffix>$(prerelease)-build$(build.buildId.PadLeft(6, '0'))</VersionSuffix>
+      </PropertyGroup>
+    </When>
+    <Otherwise>
+      <PropertyGroup>
+        <!-- Release version numbers are "MAJOR.MINOR.#". -->
+        <VersionPrefix>$(VersionPrefix).$(build.buildId.PadLeft(1, '0'))</VersionPrefix>
+      </PropertyGroup>
+    </Otherwise>
+  </Choose>
+</Project>
