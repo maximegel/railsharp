@@ -15,24 +15,32 @@ pool:
 variables:
   configuration: 'Release'
   prerelease: ci
+  srcDir: '$(Join-Path -Path build.sourcesDirectory -ChildPath "src")'
 
 steps:
   - task: DotNetCoreCLI@2
     displayName: dotnet build
     inputs:
       command: build
+      projects: '**/*.csproj'
+      configuration: $(configuration)
   
   - task: DotNetCoreCLI@2
     displayName: dotnet test
     inputs:
       command: test
       projects: 'test/**/*.csproj'
+      configuration: $(configuration)
+      nobuild: true
 
   - task: DotNetCoreCLI@2
     displayName: dotnet pack
     inputs:
       command: pack
       packDirectory: '$(build.artifactStagingDirectory)/packages'
+      workingDirectory: '$(srcDir)'
+      configuration: $(configuration)
+      nobuild: true
  
   - task: PublishBuildArtifacts@1
     displayName: publish artifacts
@@ -46,4 +54,4 @@ steps:
     inputs:
       command: custom
       custom: nuget
-      arguments: push $(build.artifactStagingDirectory)/packages/*.nupkg --source https://api.nuget.org/v3/index.json --no-service-endpoint --api-key $(nuget.apiKey)
+      arguments: push $(build.artifactStagingDirectory)/packages/*.nupkg --source https://api.nuget.org/v3/index.json --no-service-endpoint --api-key $(nuget.apiKey)      
