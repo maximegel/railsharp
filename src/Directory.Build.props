@@ -22,13 +22,13 @@
     <When Condition="'$(prerelease)' != ''">
       <PropertyGroup>
         <!-- Prerelease version numbers are "MAJOR.MINOR.0-PRERELEASE-build######" -->
-        <VersionSuffix>$(prerelease)-build$(build.buildId.PadLeft(6, '0'))</VersionSuffix>
+        <VersionSuffix>$(prerelease)-build$($(build.buildId).PadLeft(6, '0'))</VersionSuffix>
       </PropertyGroup>
     </When>
     <Otherwise>
       <PropertyGroup>
         <!-- Release version numbers are "MAJOR.MINOR.#". -->
-        <VersionPrefix>$(VersionPrefix).$(build.buildId.PadLeft(1, '0'))</VersionPrefix>
+        <VersionPrefix>$(VersionPrefix).$($(build.buildId).PadLeft(1, '0'))</VersionPrefix>
       </PropertyGroup>
     </Otherwise>
   </Choose>
