@@ -13,11 +13,32 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 variables:
+  versionPrefix: '0.1'
+  versionPrerelease: alpha
   configuration: 'Release'
-  prerelease: ci
-  srcDir: '$(Join-Path -Path build.sourcesDirectory -ChildPath "src")'
+  srcDirectory: '$(Join-Path -Path build.sourcesDirectory -ChildPath "src")'
+
+name: 
 
 steps:
+  - powershell: |
+      Write-Host $(nuget.apiKey)
+      Write-Host $(nuget.apiKey)
+      Write-Host $env:NUGET_KEY1
+      Write-Host $env:NUGET_KEY2
+    displayName: debug api key
+    env:
+      NUGET_KEY1: $(nuget.apiKey)
+      NUGET_KEY2: $(apiKey)
+
+  - powershell: |
+      $version = "$versionPrefix$(if ($versionPrerelease) {'-'} else {''})$versionPrerelease.$(rev:.r)"
+      Write-Host "##vso[task.setvariable variable=version;]$version"
+      Write-Host "Version setted to $env:version"
+      Write-Host "##vso[build.updatebuildnumber]$version"
+      Write-Host "Build number updated to $(build.buildNumber)"
+    displayName: set version
+
   - task: DotNetCoreCLI@2
     displayName: dotnet build
     inputs:
@@ -37,8 +58,8 @@ steps:
     displayName: dotnet pack
     inputs:
       command: pack
-      packDirectory: '$(build.artifactStagingDirectory)/packages'
-      workingDirectory: '$(srcDir)'
+      packDirectory: '$(build.artifactStagingDirectory)'
+      workingDirectory: '$(srcDirectory)'
       configuration: $(configuration)
       nobuild: true
  
@@ -54,4 +75,4 @@ steps:
     inputs:
       command: custom
       custom: nuget
-      arguments: push $(build.artifactStagingDirectory)/packages/*.nupkg --source https://api.nuget.org/v3/index.json --no-service-endpoint --api-key $(nuget.apiKey)      
+      arguments: push $(build.artifactStagingDirectory)/*.nupkg --source https://api.nuget.org/v3/index.json --no-service-endpoint --api-key $(nuget.apiKey)      

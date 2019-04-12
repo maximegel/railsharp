@@ -1,11 +1,10 @@
 <Project>
   <PropertyGroup>
-    <MsBuildAllProjects>$(MsBuildAllProjects);$(MsBuildThisFileFullPath)</MsBuildAllProjects>
+    <MsBuildAllProjects>$(msBuildAllProjects);$(msBuildThisFileFullPath)</MsBuildAllProjects>
   </PropertyGroup>
 
   <PropertyGroup>
-    <!-- Edit this value to change the current major.minor version. -->
-    <VersionPrefix>0.1</VersionPrefix>
+    <Version>$(version)</Version>
     <Authors>maximegelinas</Authors>
     <Copyright>Copyright (c) 2018 SoftFrame</Copyright>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
@@ -17,19 +16,4 @@
     <RepositoryType>git</RepositoryType>
     <Company>SoftFrame</Company>
   </PropertyGroup>
-
-  <Choose>
-    <When Condition="'$(prerelease)' != ''">
-      <PropertyGroup>
-        <!-- Prerelease version numbers are "MAJOR.MINOR.0-PRERELEASE-build######" -->
-        <VersionSuffix>$(prerelease)-build$(BUILD_BUILDID.PadLeft(6, '0'))</VersionSuffix>
-      </PropertyGroup>
-    </When>
-    <Otherwise>
-      <PropertyGroup>
-        <!-- Release version numbers are "MAJOR.MINOR.#". -->
-        <VersionPrefix>$(VersionPrefix).$(BUILD_BUILDID.PadLeft(1, '0'))</VersionPrefix>
-      </PropertyGroup>
-    </Otherwise>
-  </Choose>
 </Project>
