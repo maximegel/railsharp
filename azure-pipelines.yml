@@ -22,16 +22,6 @@ name:
 
 steps:
   - powershell: |
-      Write-Host $(nuget.apiKey)
-      Write-Host $(nuget.apiKey)
-      Write-Host $env:NUGET_KEY1
-      Write-Host $env:NUGET_KEY2
-    displayName: debug api key
-    env:
-      NUGET_KEY1: $(nuget.apiKey)
-      NUGET_KEY2: $(apiKey)
-
-  - powershell: |
       $version = "$versionPrefix$(if ($versionPrerelease) {'-'} else {''})$versionPrerelease.$(rev:.r)"
       Write-Host "##vso[task.setvariable variable=version;]$version"
       Write-Host "Version setted to $env:version"
