@@ -1,10 +1,10 @@
 <Project>
   <PropertyGroup>
-    <MsBuildAllProjects>$(msBuildAllProjects);$(msBuildThisFileFullPath)</MsBuildAllProjects>
+    <MsBuildAllProjects>$(MsBuildAllProjects);$(MsBuildThisFileFullPath)</MsBuildAllProjects>
   </PropertyGroup>
 
   <PropertyGroup>
-    <Version>$(version)</Version>
+    <Version>$(Build.BuildNumber)</Version>
     <Authors>maximegelinas</Authors>
     <Copyright>Copyright (c) 2018 SoftFrame</Copyright>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>

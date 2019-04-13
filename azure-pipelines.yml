@@ -14,11 +14,9 @@ pool:
 
 variables:
   versionPrefix: '0.1'
-  versionPrerelease: alpha
   configuration: 'Release'
-  srcDirectory: '$(Join-Path -Path build.sourcesDirectory -ChildPath "src")'
 
-name: $versionPrefix$(if ($versionPrerelease) {'-'} else {''})$versionPrerelease$(rev:.r)
+name: $(versionPrefix)$(Rev:.r)
 
 steps:
   - task: DotNetCoreCLI@2
@@ -40,21 +38,21 @@ steps:
     displayName: dotnet pack
     inputs:
       command: pack
-      packDirectory: '$(build.artifactStagingDirectory)'
-      workingDirectory: '$(srcDirectory)'
+      packDirectory: '$(Build.ArtifactStagingDirectory)'
+      workingDirectory: '$(Join-Path -Path Build.SourcesDirectory -ChildPath "src")'
       configuration: $(configuration)
       nobuild: true
  
   - task: PublishBuildArtifacts@1
     displayName: publish artifacts
-    #condition: $(and(succeeded(), eq(variables['build.SourceBranch'], 'refs/heads/master')))
+    #condition: $(and(succeeded(), eq(Build.SourceBranchName, 'master')))
     inputs:
-      pathtoPublish: '$(build.artifactStagingDirectory)'
+      pathtoPublish: '$(Build.ArtifactStagingDirectory)'
 
   - task: DotNetCoreCLI@2
     displayName: dotnet nuget push
-    #condition: $(and(succeeded(), eq(variables['build.SourceBranch'], 'refs/heads/master')))
+    #condition: $(and(succeeded(), eq(Build.SourceBranchName, 'master')))
     inputs:
       command: custom
       custom: nuget
-      arguments: push $(build.artifactStagingDirectory)/*.nupkg --source https://api.nuget.org/v3/index.json --no-service-endpoint --api-key $(nuget.apiKey)      
+      arguments: push $(Build.ArtifactStagingDirectory)/*.nupkg --source https://api.nuget.org/v3/index.json --no-service-endpoint --api-key $(nuget.apiKey)
