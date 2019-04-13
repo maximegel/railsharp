@@ -44,7 +44,7 @@ steps:
       nobuild: true
  
   - task: PublishBuildArtifacts@1
-    displayName: Publish artifacts
+    displayName: Publish build artifacts
     inputs:
       pathtoPublish: '$(Build.ArtifactStagingDirectory)'
 
