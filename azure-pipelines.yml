@@ -18,17 +18,9 @@ variables:
   configuration: 'Release'
   srcDirectory: '$(Join-Path -Path build.sourcesDirectory -ChildPath "src")'
 
-name: 
+name: $(versionPrefix)$(if ($versionPrerelease) {'-'} else {''})$(versionPrerelease).$(rev:.r)
 
 steps:
-  - powershell: |
-      $version = "$versionPrefix$(if ($versionPrerelease) {'-'} else {''})$versionPrerelease.$(rev:.r)"
-      Write-Host "##vso[task.setvariable variable=version;]$version"
-      Write-Host "Version setted to $env:version"
-      Write-Host "##vso[build.updatebuildnumber]$version"
-      Write-Host "Build number updated to $(build.buildNumber)"
-    displayName: set version
-
   - task: DotNetCoreCLI@2
     displayName: dotnet build
     inputs:
