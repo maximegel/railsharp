@@ -9,8 +9,8 @@
     <Copyright>Copyright (c) 2018 SoftFrame</Copyright>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageIconUrl>https://imgur.com/T4erGVt.png</PackageIconUrl>
-    <IncludeSymbols>true</IncludeSymbols>
+    <PackageIconUrl>https://imgur.com/h5hgvh7.png</PackageIconUrl>
+    <IncludeSymbols>false</IncludeSymbols>
     <IncludeSource>true</IncludeSource>
     <RepositoryUrl>https://github.com/softframe/railsharp</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
