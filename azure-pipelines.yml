@@ -1,0 +1,56 @@
+trigger:
+  batch: true
+  branches:
+    include:
+      - master
+      - develop
+  paths:
+    exclude:
+      - LICENSE
+      - README.md
+
+pool:
+  vmImage: 'Ubuntu-16.04'
+
+variables:
+  versionPrefix: '0.2'
+  configuration: 'Release'
+
+name: $(versionPrefix)$(Rev:.r)
+
+steps:
+  - task: DotNetCoreCLI@2
+    displayName: Build
+    inputs:
+      command: build
+      projects: '**/*.csproj'
+      configuration: $(configuration)
+  
+  - task: DotNetCoreCLI@2
+    displayName: Test
+    inputs:
+      command: test
+      projects: 'test/**/*.csproj'
+      configuration: $(configuration)
+      nobuild: true
+
+  - task: DotNetCoreCLI@2
+    displayName: Pack
+    inputs:
+      command: pack
+      packDirectory: '$(Build.ArtifactStagingDirectory)'
+      workingDirectory: '$(Join-Path -Path Build.SourcesDirectory -ChildPath "src")'
+      configuration: $(configuration)
+      nobuild: true
+ 
+  - task: PublishBuildArtifacts@1
+    displayName: Publish build artifacts
+    inputs:
+      pathtoPublish: '$(Build.ArtifactStagingDirectory)'
+
+  - task: DotNetCoreCLI@2
+    displayName: Push to NuGet
+    inputs:
+      command: custom
+      custom: nuget
+      arguments: push $(Build.ArtifactStagingDirectory)/*.nupkg --source https://api.nuget.org/v3/index.json --api-key $(nugetApiKey)

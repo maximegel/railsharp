@@ -1,7 +1,15 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <IsPackable>true</IsPackable>
+    <Description>A small railway oriented library that offers a simple implementation of the Option type and Result type in C#.</Description>
+    <PackageReleaseNotes></PackageReleaseNotes>
+    <PackageTags>railway-oriented-programming; functionnal-programming; option-type; result-type; csharp; dotnet-standard</PackageTags>
   </PropertyGroup>
 
 </Project>

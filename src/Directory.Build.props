@@ -1,0 +1,20 @@
+<Project>
+  <PropertyGroup>
+    <MsBuildAllProjects>$(MsBuildAllProjects);$(MsBuildThisFileFullPath)</MsBuildAllProjects>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <Version>$(BUILD_BUILDNUMBER)</Version>
+    <Authors>maximegelinas</Authors>
+    <Copyright>Copyright (c) 2018 SoftFrame</Copyright>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIconUrl>https://imgur.com/h5hgvh7.png</PackageIconUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <IncludeSource>true</IncludeSource>
+    <RepositoryUrl>https://github.com/softframe/railsharp</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <Company>SoftFrame</Company>
+  </PropertyGroup>
+</Project>
