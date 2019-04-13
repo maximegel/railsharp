@@ -20,14 +20,14 @@ name: $(versionPrefix)$(Rev:.r)
 
 steps:
   - task: DotNetCoreCLI@2
-    displayName: dotnet build
+    displayName: Build
     inputs:
       command: build
       projects: '**/*.csproj'
       configuration: $(configuration)
   
   - task: DotNetCoreCLI@2
-    displayName: dotnet test
+    displayName: Test
     inputs:
       command: test
       projects: 'test/**/*.csproj'
@@ -35,7 +35,7 @@ steps:
       nobuild: true
 
   - task: DotNetCoreCLI@2
-    displayName: dotnet pack
+    displayName: Pack
     inputs:
       command: pack
       packDirectory: '$(Build.ArtifactStagingDirectory)'
@@ -44,13 +44,13 @@ steps:
       nobuild: true
  
   - task: PublishBuildArtifacts@1
-    displayName: publish artifacts
+    displayName: Publish artifacts
     #condition: $(and(succeeded(), eq(Build.SourceBranchName, 'master')))
     inputs:
       pathtoPublish: '$(Build.ArtifactStagingDirectory)'
 
   - task: DotNetCoreCLI@2
-    displayName: dotnet nuget push
+    displayName: Push to NuGet
     #condition: $(and(succeeded(), eq(Build.SourceBranchName, 'master')))
     inputs:
       command: custom
