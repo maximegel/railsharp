@@ -45,7 +45,6 @@ steps:
  
   - task: PublishBuildArtifacts@1
     displayName: Publish artifacts
-    #condition: $(and(succeeded(), eq(Build.SourceBranchName, 'master')))
     inputs:
       pathtoPublish: '$(Build.ArtifactStagingDirectory)'
 
