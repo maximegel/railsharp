@@ -18,7 +18,7 @@ variables:
   configuration: 'Release'
   srcDirectory: '$(Join-Path -Path build.sourcesDirectory -ChildPath "src")'
 
-name: $(versionPrefix)$(if ($versionPrerelease) {'-'} else {''})$(versionPrerelease).$(rev:.r)
+name: $versionPrefix$(if ($versionPrerelease) {'-'} else {''})$versionPrerelease$(rev:.r)
 
 steps:
   - task: DotNetCoreCLI@2
@@ -47,13 +47,13 @@ steps:
  
   - task: PublishBuildArtifacts@1
     displayName: publish artifacts
-    #condition: $(and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master')))
+    #condition: $(and(succeeded(), eq(variables['build.SourceBranch'], 'refs/heads/master')))
     inputs:
       pathtoPublish: '$(build.artifactStagingDirectory)'
 
   - task: DotNetCoreCLI@2
     displayName: dotnet nuget push
-    #condition: $(and(succeeded(), eq(variables['Build.SourceBranch'], 'refs/heads/master')))
+    #condition: $(and(succeeded(), eq(variables['build.SourceBranch'], 'refs/heads/master')))
     inputs:
       command: custom
       custom: nuget
