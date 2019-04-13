@@ -13,7 +13,7 @@ pool:
   vmImage: 'Ubuntu-16.04'
 
 variables:
-  versionPrefix: '0.1'
+  versionPrefix: '0.2'
   configuration: 'Release'
 
 name: $(versionPrefix)$(Rev:.r)
@@ -54,4 +54,4 @@ steps:
     inputs:
       command: custom
       custom: nuget
-      arguments: push $(Build.ArtifactStagingDirectory)/*.nupkg --source https://api.nuget.org/v3/index.json --no-symbols=true --no-service-endpoint --api-key $(nugetApiKey)
+      arguments: push $(Build.ArtifactStagingDirectory)/*.nupkg --source https://api.nuget.org/v3/index.json --api-key $(nugetApiKey)
