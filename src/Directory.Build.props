@@ -4,7 +4,7 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <Version>$(Build.BuildNumber)</Version>
+    <Version>$(BUILD_BUILDNUMBER)</Version>
     <Authors>maximegelinas</Authors>
     <Copyright>Copyright (c) 2018 SoftFrame</Copyright>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
