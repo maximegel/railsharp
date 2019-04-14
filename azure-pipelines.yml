@@ -10,7 +10,7 @@ trigger:
       - README.md
 
 pool:
-  vmImage: 'Ubuntu-16.04'
+  vmImage: windows-latest
 
 variables:
   versionPrefix: '0.2'
