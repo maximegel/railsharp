@@ -19,6 +19,7 @@ variables:
 
 steps:
   - task: GitVersion@4
+    displayName: Set version
     inputs:
       updateAssemblyInfo: true
 
