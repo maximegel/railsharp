@@ -13,8 +13,6 @@ pool:
   vmImage: windows-latest
 
 variables:
-  versionPrefix: '0.2'
-  versionPrerelease: 'unstable'
   configuration: 'Release'
 
 steps:
