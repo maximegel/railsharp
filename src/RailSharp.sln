@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.539
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RailSharp", "RailSharp\RailSharp.csproj", "{4EA6D6D2-5B8D-4675-A29D-44C2E0FFF939}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RailSharp", "RailSharp\RailSharp.csproj", "{4EA6D6D2-5B8D-4675-A29D-44C2E0FFF939}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RailSharp.Tests", "RailSharp.Tests\RailSharp.Tests.csproj", "{331513ED-52F7-4DA5-A386-77C197AE61CA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{4EA6D6D2-5B8D-4675-A29D-44C2E0FFF939}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4EA6D6D2-5B8D-4675-A29D-44C2E0FFF939}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4EA6D6D2-5B8D-4675-A29D-44C2E0FFF939}.Release|Any CPU.Build.0 = Release|Any CPU
+		{331513ED-52F7-4DA5-A386-77C197AE61CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{331513ED-52F7-4DA5-A386-77C197AE61CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{331513ED-52F7-4DA5-A386-77C197AE61CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{331513ED-52F7-4DA5-A386-77C197AE61CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
