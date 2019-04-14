@@ -47,10 +47,3 @@ steps:
     displayName: Publish build artifacts
     inputs:
       pathtoPublish: '$(Build.ArtifactStagingDirectory)'
-
-  - task: DotNetCoreCLI@2
-    displayName: Push to NuGet
-    inputs:
-      command: custom
-      custom: nuget
-      arguments: push $(Build.ArtifactStagingDirectory)/*.nupkg --source https://api.nuget.org/v3/index.json --api-key $(nugetApiKey)
