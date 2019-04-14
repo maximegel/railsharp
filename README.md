@@ -1,9 +1,9 @@
-<header style="text-align: center">
-    <p id="readme-logo">
+<header>
+    <p id="readme-logo" align="center">
         <img alt="RailSharp" src="https://imgur.com/h5hgvh7.png" height="200px">
     </p>
-    <h1 id="readme-title">RailSharp#</h1>
-    <p id="readme-badges">
+    <h1 id="readme-title" align="center">RailSharp#</h1>
+    <p id="readme-badges" align="center">
         <a href="https://dev.azure.com/SoftFrame/RailSharp/_build/latest?definitionId=2&branchName=master" target="_blank">
             <img alt="Azure DevOps builds" src="https://img.shields.io/azure-devops/build/softframe/c8394a74-6f1e-441d-8ef1-8a1845f52445/2.svg?logo=azure-devops&style=flat-square">
         </a>
@@ -14,10 +14,10 @@
             <img alt="License" src="https://img.shields.io/github/license/softframe/railsharp.svg?style=flat-square">
         </a>
     </p>
-    <p id="readme-summary">
+    <p id="readme-summary" align="center">
         A small railway oriented library that offers a simple implementation of the <a href="http://codinghelmet.com/articles/understanding-the-option-maybe-functional-type" target="_blank">Option type</a> and Result type in C#.
     </p>
-    <nav id="readme-quick-links">
+    <nav id="readme-quick-links" align="center">
         <!-- <b>Quick links:</b> {{ links }} -->
     </nav>
 </header>
