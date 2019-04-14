@@ -14,11 +14,21 @@ pool:
 
 variables:
   versionPrefix: '0.2'
+  versionPrerelease: 'unstable'
   configuration: 'Release'
 
 name: $(versionPrefix)$(Rev:.r)
 
 steps:
+  - powershell: |
+      $prefix = $Env:VERSIONPREFIX
+      $prerelease = if ($Env:BUILD_SOURCEBRANCHNAME -eq 'master') {''} else {"-$Env:VERSIONPRERELEASE"}
+      $revision = $Env:BUILD_BUILDNUMBER.Substring($Env:BUILD_BUILDNUMBER.LastIndexOf('.'))
+      $version = "$prefix$prerelease$revision"
+      Write-Host "Setting build number to: $version..."
+      Write-Host "##vso[build.updatebuildnumber]$version"
+    displayName: Set build number
+
   - task: DotNetCoreCLI@2
     displayName: Build
     inputs:
