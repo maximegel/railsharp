@@ -10,15 +10,17 @@ trigger:
       - README.md
 
 pool:
-  vmImage: 'Ubuntu-16.04'
+  vmImage: windows-latest
 
 variables:
-  versionPrefix: '0.2'
   configuration: 'Release'
 
-name: $(versionPrefix)$(Rev:.r)
-
 steps:
+  - task: GitVersion@4
+    displayName: Set version
+    inputs:
+      updateAssemblyInfo: true
+
   - task: DotNetCoreCLI@2
     displayName: Build
     inputs:
