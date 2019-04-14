@@ -18,7 +18,7 @@ variables:
   configuration: 'Release'
 
 steps:
-  - task: GitVersionNetCore@5
+  - task: GitVersion@4
     inputs:
       updateAssemblyInfo: true
 
