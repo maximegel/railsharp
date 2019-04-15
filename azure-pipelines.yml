@@ -32,7 +32,7 @@ steps:
     displayName: Test
     inputs:
       command: test
-      projects: '**/*test*.csproj'
+      projects: '**/*Test*.csproj'
       configuration: $(configuration)
       nobuild: true
       arguments: '--collect "Code coverage"'
