@@ -13,7 +13,7 @@ pool:
   vmImage: windows-latest
 
 variables:
-  configuration: 'Release'
+  configuration: Release
 
 steps:
   - task: GitVersion@4
@@ -35,7 +35,19 @@ steps:
       projects: '**/*Test*.csproj'
       configuration: $(configuration)
       nobuild: true
-      arguments: '--collect "Code coverage" --settings ..\CodeCoverage.runsettings'
+      arguments: /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:Include="[RailSharp]*"
+
+  - script: |
+      dotnet tool install -g dotnet-reportgenerator-globaltool
+      reportgenerator -reports:$(Build.SourcesDirectory)/**/coverage.cobertura.xml -targetdir:$(Build.SourcesDirectory)/CodeCoverage -reporttypes:"HtmlInline_AzurePipelines;Cobertura"
+    displayName: Generate code coverage report
+
+  - task: PublishCodeCoverageResults@1
+    displayName: 'Publish code coverage results'
+    inputs:
+      codeCoverageTool: Cobertura
+      summaryFileLocation: '$(Build.SourcesDirectory)/CodeCoverage/Cobertura.xml'
+      reportDirectory: '$(Build.SourcesDirectory)/CodeCoverage'
 
   - task: DotNetCoreCLI@2
     displayName: Pack
