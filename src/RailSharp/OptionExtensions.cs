@@ -22,12 +22,6 @@ namespace RailSharp
         public static T Reduce<T>(this Option<T> option, Func<T> defaultValueFactory) =>
             option is Some<T> some ? (T) some : defaultValueFactory();
 
-        public static Task<T> ReduceAsync<T>(this Option<Task<T>> option, T defaultValue) =>
-            Reduce(option, Task.FromResult(defaultValue));
-
-        public static Task<T> ReduceAsync<T>(this Option<Task<T>> option, Func<T> defaultValueFactory) =>
-            Reduce(option, () => Task.FromResult(defaultValueFactory()));
-
         public static Option<T> When<T>(this Option<T> option, Func<T, bool> predicate) =>
             option is Some<T> some && predicate(some) ? (Option<T>) some : Option.None;
     }
