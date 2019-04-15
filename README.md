@@ -5,7 +5,13 @@
     <h1 id="readme-title" align="center">RailSharp#</h1>
     <p id="readme-badges" align="center">
         <a href="https://dev.azure.com/SoftFrame/RailSharp/_build/latest?definitionId=2&branchName=master" target="_blank">
-            <img alt="Azure DevOps builds" src="https://img.shields.io/azure-devops/build/softframe/c8394a74-6f1e-441d-8ef1-8a1845f52445/2.svg?logo=azure-devops&style=flat-square">
+            <img alt="Azure DevOps builds" src="https://img.shields.io/azure-devops/build/softframe/c8394a74-6f1e-441d-8ef1-8a1845f52445/2.svg?style=flat-square">
+        </a>
+        <a href="https://dev.azure.com/SoftFrame/RailSharp/_build/latest?definitionId=2&branchName=master&view=ms.vss-test-web.build-test-results-tab" target="_blank">
+            <img alt="Azure DevOps tests" src="https://img.shields.io/azure-devops/tests/softframe/railsharp/2.svg?style=flat-square">
+        </a>
+        <a href="https://dev.azure.com/SoftFrame/RailSharp/_build/latest?definitionId=2&branchName=master&view=codecoverage-tab" target="_blank">
+            <img alt="Azure DevOps coverage" src="https://img.shields.io/azure-devops/coverage/softframe/railsharp/2.svg?style=flat-square">
         </a>
         <a href="https://www.nuget.org/packages/RailSharp" target="_blank">
             <img alt="Nuget" src="https://img.shields.io/nuget/v/railsharp.svg?style=flat-square">
