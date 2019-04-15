@@ -32,7 +32,7 @@ steps:
     displayName: Test
     inputs:
       command: test
-      projects: 'test/**/*.csproj'
+      projects: '**/*test*.csproj'
       configuration: $(configuration)
       nobuild: true
 
