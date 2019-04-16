@@ -35,7 +35,7 @@ steps:
       projects: '**/*Test*.csproj'
       configuration: $(configuration)
       nobuild: true
-      arguments: /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:Include="[RailSharp]*"
+      arguments: /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:Include="[$(System.TeamProject)*]*" /p:Exclude="[*Test*]*"
 
   - script: |
       dotnet tool install -g dotnet-reportgenerator-globaltool
@@ -43,7 +43,7 @@ steps:
     displayName: Generate code coverage report
 
   - task: PublishCodeCoverageResults@1
-    displayName: 'Publish code coverage results'
+    displayName: Publish code coverage results
     inputs:
       codeCoverageTool: Cobertura
       summaryFileLocation: '$(Build.SourcesDirectory)/CodeCoverage/Cobertura.xml'
