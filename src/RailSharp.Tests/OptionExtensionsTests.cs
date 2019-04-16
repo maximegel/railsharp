@@ -33,31 +33,31 @@ namespace RailSharp.Tests
         }
 
         [Fact]
-        public void Map_WhenNone_DoesntMapContent()
+        public void Map_WhenNone_DoesntMapSome()
         {
             var option = Option<int>.None;
 
             var result = option
-                .Map(x => $"content={5}")
-                .Reduce("content=none");
+                .Map(x => $"some={5}")
+                .Reduce("none");
 
-            result.Should().Be("content=none");
+            result.Should().Be("none");
         }
 
         [Fact]
-        public void Map_WhenSome_MapsContent()
+        public void Map_WhenSome_MapsSome()
         {
             var option = Option.Some(5);
 
             var result = option
-                .Map(x => $"content={5}")
-                .Reduce("content=none");
+                .Map(x => $"some={5}")
+                .Reduce("none");
 
-            result.Should().Be("content=5");
+            result.Should().Be("some=5");
         }
 
         [Fact]
-        public void Reduce_WithDefaultFuncWhenNone_ReturnsDefaultFuncResult()
+        public void Reduce_WhenNoneWithDefaultFunc_ReturnsDefaultFuncResult()
         {
             var option = Option<int>.None;
 
@@ -67,17 +67,7 @@ namespace RailSharp.Tests
         }
 
         [Fact]
-        public void Reduce_WithDefaultFuncWhenSome_ReturnsContent()
-        {
-            var option = Option.Some(5);
-
-            var result = option.Reduce(() => 1);
-
-            result.Should().Be(5);
-        }
-
-        [Fact]
-        public void Reduce_WithDefaultValueWhenNone_ReturnsDefaultValue()
+        public void Reduce_WhenNoneWithDefaultValue_ReturnsDefaultValue()
         {
             var option = Option<int>.None;
 
@@ -87,7 +77,17 @@ namespace RailSharp.Tests
         }
 
         [Fact]
-        public void Reduce_WithDefaultValueWhenSome_ReturnsContent()
+        public void Reduce_WhenSomeWithDefaultFunc_ReturnsSome()
+        {
+            var option = Option.Some(5);
+
+            var result = option.Reduce(() => 1);
+
+            result.Should().Be(5);
+        }
+
+        [Fact]
+        public void Reduce_WhenSomeWithDefaultValue_ReturnsSome()
         {
             var option = Option.Some(5);
 
@@ -107,7 +107,7 @@ namespace RailSharp.Tests
         }
 
         [Fact]
-        public void When_WithMatchingPredicateWhenSome_ReturnsSome()
+        public void When_WithMatchingPredicate_ReturnsSome()
         {
             var option = Option.Some(5);
 
@@ -117,7 +117,7 @@ namespace RailSharp.Tests
         }
 
         [Fact]
-        public void When_WithNonMatchingPredicateWhenSome_ReturnsNone()
+        public void When_WithNonMatchingPredicate_ReturnsNone()
         {
             var option = Option.Some(5);
 

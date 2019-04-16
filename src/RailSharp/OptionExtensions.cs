@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Threading.Tasks;
 using RailSharp.Internal.Option;
 
 namespace RailSharp

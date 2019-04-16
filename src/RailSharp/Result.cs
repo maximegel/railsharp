@@ -6,5 +6,8 @@ namespace RailSharp
     {
         public static Success Success =>
             new Success();
+
+        public static Failure<TFailure> Failure<TFailure>(TFailure failure) =>
+            new Failure<TFailure>(failure);
     }
 }
