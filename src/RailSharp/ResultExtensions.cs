@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using RailSharp.Internal.Result;
 
 namespace RailSharp

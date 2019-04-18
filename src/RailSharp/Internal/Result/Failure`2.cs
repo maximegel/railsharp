@@ -2,7 +2,7 @@
 {
     public class Failure<TFailure, TSuccess> : Result<TFailure, TSuccess>
     {
-        internal readonly TFailure _content;
+        private readonly TFailure _content;
 
         public Failure(TFailure content) =>
             _content = content;

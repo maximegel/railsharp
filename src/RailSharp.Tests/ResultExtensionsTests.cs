@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using FluentAssertions;
 using Xunit;
 
@@ -29,6 +31,42 @@ namespace RailSharp.Tests
         }
 
         [Fact]
+        public static void Catch_WithMatchingTArg_ReturnsMappedFailure()
+        {
+            Result<IEnumerable<char>, string> result = Result.Failure("not found".AsEnumerable());
+
+            var value = result
+                .Catch<string>(err => $"error: {err}")
+                .Catch(_ => "error");
+
+            value.Should().Be("error: not found");
+        }
+
+        [Fact]
+        public static void Catch_WithMatchingTArgAndMatchingPredicate_ReturnsMappedFailure()
+        {
+            Result<IEnumerable<char>, string> result = Result.Failure("not found".AsEnumerable());
+
+            var value = result
+                .Catch<string>(err => err.Length > 5, err => $"error: {err}")
+                .Catch(_ => "error");
+
+            value.Should().Be("error: not found");
+        }
+
+        [Fact]
+        public static void Catch_WithMatchingTArgAndNonMatchingPredicate_DoesntMapFailure()
+        {
+            Result<IEnumerable<char>, string> result = Result.Failure("not found".AsEnumerable());
+
+            var value = result
+                .Catch<string>(err => err.Length < 5, err => $"error: {err}")
+                .Catch(_ => "error");
+
+            value.Should().Be("error");
+        }
+
+        [Fact]
         public static void Catch_WithNonMatchingPredicate_DoesntMapFailure()
         {
             Result<int, string> result = Result.Failure(500);
@@ -41,12 +79,24 @@ namespace RailSharp.Tests
         }
 
         [Fact]
-        public static void Map_WhenFailureWithoutTSuccess_DoesntMapSuccess()
+        public static void Catch_WithNonMatchingTArg_DoesntMapFailure()
         {
-            Result<string> result = Result.Failure("error");
+            Result<IEnumerable<char>, string> result = Result.Failure("not found".AsEnumerable());
 
             var value = result
-                .Map(() => 5)
+                .Catch<List<char>>(err => $"error: {err}")
+                .Catch(_ => "error");
+
+            value.Should().Be("error");
+        }
+
+        [Fact]
+        public static void Map_WhenFailureWithoutTSuccess_DoesntMapSuccess()
+        {
+            Result<string, int> result = Result.Failure("error");
+
+            var value = result
+                .Map(_ => 5)
                 .Catch(_ => 0);
 
             value.Should().Be(0);
@@ -67,7 +117,7 @@ namespace RailSharp.Tests
         [Fact]
         public static void Map_WhenSuccessWithoutTSuccess_MapsSuccess()
         {
-            Result<string> result = Result.Success;
+            Result<string> result = Result.Success();
 
             var value = result
                 .Map(() => 5)
@@ -79,7 +129,7 @@ namespace RailSharp.Tests
         [Fact]
         public static void Map_WhenSuccessWithTSuccess_MapsSuccess()
         {
-            Result<string, int> result = 3;
+            Result<string, int> result = Result.Success(3);
 
             var value = result
                 .Map(x => x + 2)
@@ -111,7 +161,7 @@ namespace RailSharp.Tests
         [Fact]
         public static void ThrowIfFailure_WhenSuccess_ReturnsSuccess()
         {
-            Result<Exception, int> result = 5;
+            Result<Exception, int> result = Result.Success(5);
 
             var value = result.ThrowIfFailure();
 
@@ -121,7 +171,7 @@ namespace RailSharp.Tests
         [Fact]
         public static void ThrowIfFailure_WhenSuccessWithMapper_ReturnsSuccess()
         {
-            Result<Exception, int> result = 5;
+            Result<Exception, int> result = Result.Success(5);
 
             var value = result.ThrowIfFailure(err => new Exception($"error: {err}"));
 

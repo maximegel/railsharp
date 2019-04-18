@@ -1,6 +1,6 @@
 ﻿namespace RailSharp.Internal.Result
 {
-    public class Success
+    public class VoidSuccess
     {
     }
 }

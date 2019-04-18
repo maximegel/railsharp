@@ -15,11 +15,11 @@ namespace RailSharp.Tests
         }
 
         [Fact]
-        public static void ImplicitSuccessOperator_ReturnsSuccessAsResult()
+        public static void ImplicitVoidSuccessOperator_ReturnsSuccessAsResult()
         {
-            var result = (Result<string>) Result.Success;
+            var result = (Result<string>)Result.Success();
 
-            result.Should().BeOfType<Success<string>>();
+            result.Should().BeOfType<VoidSuccess<string>>();
         }
 
         [Fact]
@@ -27,7 +27,7 @@ namespace RailSharp.Tests
         {
             const string failure = "error";
 
-            var resultWithoutTSuccess = (Result<string>) failure;
+            var resultWithoutTSuccess = (Result<string>)failure;
             var resultWithTSuccess = (Result<string, int>) failure;
 
             resultWithoutTSuccess.Should().BeOfType<Failure<string>>();
