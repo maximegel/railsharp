@@ -4,26 +4,39 @@
     </p>
     <h1 id="readme-title" align="center">RailSharp#</h1>
     <p id="readme-badges" align="center">
-        <a href="https://dev.azure.com/SoftFrame/RailSharp/_build/latest?definitionId=2&branchName=master" target="_blank">
-            <img alt="Azure DevOps builds" src="https://img.shields.io/azure-devops/build/softframe/c8394a74-6f1e-441d-8ef1-8a1845f52445/2.svg?logo=azure-devops&style=flat-square">
+        <a href="https://dev.azure.com/SoftFrame/RailSharp/_release?definitionId=2&_a=deployments">
+            <img alt="Azure DevOps releases" src="https://img.shields.io/azure-devops/release/softframe/c8394a74-6f1e-441d-8ef1-8a1845f52445/2/5.svg?style=flat-square">
         </a>
-        <a href="https://www.nuget.org/packages/RailSharp" target="_blank">
+        <a href="https://dev.azure.com/SoftFrame/RailSharp/_build/latest?definitionId=2&branchName=develop">
+            <img alt="Azure DevOps builds" src="https://img.shields.io/azure-devops/build/softframe/c8394a74-6f1e-441d-8ef1-8a1845f52445/2/develop.svg?style=flat-square">
+        </a>
+        <a href="https://dev.azure.com/SoftFrame/RailSharp/_build/latest?definitionId=2&branchName=develop">
+            <img alt="Azure DevOps tests" src="https://img.shields.io/azure-devops/tests/softframe/railsharp/2/develop.svg?style=flat-square">
+        </a>
+        <a href="https://dev.azure.com/SoftFrame/RailSharp/_build/latest?definitionId=2&branchName=develop">
+            <img alt="Azure DevOps coverage" src="https://img.shields.io/azure-devops/coverage/softframe/railsharp/2/develop.svg?style=flat-square">
+        </a>
+        <a href="https://www.nuget.org/packages/RailSharp">
             <img alt="Nuget" src="https://img.shields.io/nuget/v/railsharp.svg?style=flat-square">
         </a>
-        <a href="https://github.com/softframe/railsharp/blob/master/LICENSE" target="_blank">
+        <a href="https://github.com/softframe/railsharp/blob/master/LICENSE">
             <img alt="License" src="https://img.shields.io/github/license/softframe/railsharp.svg?style=flat-square">
         </a>
     </p>
     <p id="readme-summary" align="center">
-        A small railway oriented library that offers a simple implementation of the <a href="http://codinghelmet.com/articles/understanding-the-option-maybe-functional-type" target="_blank">Option type</a> and Result type in C#.
+        A small railway oriented library that offers a simple implementation of the <a href="http://codinghelmet.com/articles/understanding-the-option-maybe-functional-type">Option type</a> and Result type in C#.
     </p>
     <nav id="readme-quick-links" align="center">
         <!-- <b>Quick links:</b> {{ links }} -->
     </nav>
 </header>
 
-<!-- # What is RailSharp? -->
-<!-- # Why should I use it -->
+# What is RailSharp?
+
+RailSharp uses railway oriented programming to help handle errors and to deal with our old friend `NullReferenceException`.
+
+To learn more about railway oriented programming, take a look [here](https://fsharpforfunandprofit.com/rop/)!
+
 <!-- # How do I get started? -->
 
 # How do I install it?
@@ -38,7 +51,7 @@ dotnet add package RailSharp
 
 First, you can check if your issue has already been tracked [here][issues-url].
 
-<!-- Otherwise, you can check if it's already fixed by pulling the [develop branch][develop-branch-url], building the solution and then using the generated DLL files direcly in your project. -->
+Otherwise, you can check if it's already fixed by pulling the [develop branch][develop-branch-url], building the solution and then using the generated DLL files direcly in your project.
 
 If you still hit a problem, please document it and post it [here][new-issue-url].
 

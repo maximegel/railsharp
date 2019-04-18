@@ -10,15 +10,17 @@ trigger:
       - README.md
 
 pool:
-  vmImage: 'Ubuntu-16.04'
+  vmImage: windows-latest
 
 variables:
-  versionPrefix: '0.2'
-  configuration: 'Release'
-
-name: $(versionPrefix)$(Rev:.r)
+  configuration: Release
 
 steps:
+  - task: GitVersion@4
+    displayName: Set version
+    inputs:
+      updateAssemblyInfo: true
+
   - task: DotNetCoreCLI@2
     displayName: Build
     inputs:
@@ -30,9 +32,21 @@ steps:
     displayName: Test
     inputs:
       command: test
-      projects: 'test/**/*.csproj'
+      projects: '**/*Test*.csproj'
       configuration: $(configuration)
       nobuild: true
+      arguments: /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:Include="[$(System.TeamProject)*]*" /p:Exclude="[*Test*]*"
+
+  - script: |
+      dotnet tool install -g dotnet-reportgenerator-globaltool
+      reportgenerator -reports:$(Build.SourcesDirectory)/**/coverage.cobertura.xml -targetdir:$(Build.SourcesDirectory)/CodeCoverage -reporttypes:"Cobertura"
+    displayName: Generate code coverage report
+
+  - task: PublishCodeCoverageResults@1
+    displayName: Publish code coverage results
+    inputs:
+      codeCoverageTool: Cobertura
+      summaryFileLocation: '$(Build.SourcesDirectory)/CodeCoverage/Cobertura.xml'
 
   - task: DotNetCoreCLI@2
     displayName: Pack
