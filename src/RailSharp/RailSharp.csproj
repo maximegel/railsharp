@@ -10,6 +10,7 @@
     <Description>A small railway oriented library that offers a simple implementation of the Option type and Result type in C#.</Description>
     <PackageReleaseNotes></PackageReleaseNotes>
     <PackageTags>railway-oriented-programming; functionnal-programming; option-type; result-type; csharp; dotnet-standard</PackageTags>
+    <LangVersion>7.1</LangVersion>
   </PropertyGroup>
 
 </Project>

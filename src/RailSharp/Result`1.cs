@@ -7,7 +7,7 @@ namespace RailSharp
         public static implicit operator Result<TFailure>(TFailure failure) =>
             new Failure<TFailure>(failure);
 
-        public static implicit operator Result<TFailure>(Success success) =>
-            new Success<TFailure>();
+        public static implicit operator Result<TFailure>(VoidSuccess success) =>
+            new VoidSuccess<TFailure>();
     }
 }

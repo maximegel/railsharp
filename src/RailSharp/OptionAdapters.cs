@@ -8,11 +8,7 @@ namespace RailSharp
     public static class OptionAdapters
     {
         public static IEnumerable<T> Flatten<T>(this IEnumerable<Option<T>> sequence) =>
-            sequence.OfType<Some<T>>().Select(some => (T) some);
-
-        public static IEnumerable<TResult> Flatten<T, TResult>(
-            this IEnumerable<T> sequence, Func<T, Option<TResult>> mapper) =>
-            sequence.Select(mapper).Flatten();
+            sequence.OfType<Some<T>>().Select(option => option.Reduce(default(T)));
 
         /// <summary>
         ///     Returns an option containing the first element of the sequence that satisfies a condition or a an empty option if

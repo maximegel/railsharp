@@ -1,4 +1,5 @@
-﻿using RailSharp.Internal.Option;
+﻿using System;
+using RailSharp.Internal.Option;
 
 namespace RailSharp
 {
@@ -10,7 +11,10 @@ namespace RailSharp
         public static Option<T> From<T>(T value) =>
             value == null ? None : Some(value);
 
-        public static Option<T> Some<T>(T value) =>
-            new Some<T>(value);
+        public static Option<T> Some<T>(T value)
+        {
+            if (value == null) throw new ArgumentNullException(nameof(value));
+            return new Some<T>(value);
+        }
     }
 }
