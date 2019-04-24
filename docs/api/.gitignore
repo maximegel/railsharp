@@ -1,0 +1,4 @@
+### DocFX ###
+*.yml
+!filter-rules.yml
+.manifest

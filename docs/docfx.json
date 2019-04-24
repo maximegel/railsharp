@@ -1,0 +1,70 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "files": [
+            "src/**.csproj"
+          ],
+          "exclude": [
+            "**/obj/**",
+            "**/bin/**",
+            "**/*Test*.csproj"
+          ],
+          "src": "../"
+        }
+      ],
+      "dest": "api",
+      "filter": "api/filter-rules.yml"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "api/**.yml",
+          "api/index.md"
+        ],
+        "exclude": [
+          "api/filter-rules.yml"
+        ]
+      },
+      {
+        "files": [
+          "articles/**.md",
+          "articles/**/toc.yml",
+          "toc.yml",
+          "*.md"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "assets/**"
+        ]
+      }
+    ],
+    "overwrite": [
+      {
+        "files": [
+          "api/**.md"
+        ],
+        "exclude": [
+          "api/index.md"
+        ]
+      }
+    ],
+    "dest": "_site",
+    "globalMetadata": {
+      "_appTitle": "RailSharp",
+      "_appFooter": "Copyright © 2018 SoftFrame",
+      "_appLogoPath": "",
+      "_appFaviconPath": ""
+    },
+    "template": [
+      "default",
+      "templates/darkfx/darkfx"
+    ]
+  }
+}
