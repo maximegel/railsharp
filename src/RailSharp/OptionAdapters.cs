@@ -24,6 +24,13 @@ namespace RailSharp
         ///     Returns an option containing the first element of the sequence that satisfies a condition or a an empty option if
         ///     no such element is found.
         /// </summary>
+        /// <remarks>
+        ///     This implementation was inspired by Microsoft's implementation of
+        ///     <see cref="Enumerable.FirstOrDefault{TSource}(IEnumerable{TSource})" />.
+        ///     We can't use <see cref="Enumerable.FirstOrDefault{TSource}(IEnumerable{TSource})" /> direcly in this method
+        ///     because, when using a sequence of structs, we can't determine if the default value is the matching element or the
+        ///     actual default value.
+        /// </remarks>
         /// <typeparam name="T">The type of the sequence elements.</typeparam>
         /// <param name="sequence">The sequence to search in.</param>
         /// <param name="predicate">A function to test each element for a condition.</param>
@@ -66,6 +73,13 @@ namespace RailSharp
         ///     Returns an option containing the only element of a sequence, or an empty option if the sequence contains no
         ///     elements.
         /// </summary>
+        /// <remarks>
+        ///     This implementation was inspired by Microsoft's implementation of
+        ///     <see cref="Enumerable.SingleOrDefault{TSource}(IEnumerable{TSource})" />.
+        ///     We can't use <see cref="Enumerable.SingleOrDefault{TSource}(IEnumerable{TSource})" /> direcly in this method
+        ///     because, when using a sequence of structs, we can't determine if the default value is the matching element or the
+        ///     actual default value.
+        /// </remarks>
         /// <typeparam name="T">The type of the sequence elements.</typeparam>
         /// <param name="sequence">The sequence to search in.</param>
         /// <param name="predicate">A function to test each element for a condition.</param>
