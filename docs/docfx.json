@@ -64,7 +64,7 @@
     },
     "template": [
       "default",
-      "templates/darkfx/darkfx"
+      "node_modules/darkfx/darkfx"
     ]
   }
 }

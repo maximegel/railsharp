@@ -1,0 +1,17 @@
+{
+  "name": "railsharp-docs",
+  "description": "RailSharp documentation",
+  "scripts": {
+    "install": "napa steffen-wilke/darkfx",
+    "start": "npm run build && npm run serve",
+    "clean": "git add * && git clean -xdf --exclude node_modules/ && git reset HEAD -- .",
+    "build": "dotnet build",
+    "rebuild": "npm run clean && npm run build",
+    "serve": "cd ./_site && lite-server"
+  },
+  "devDependencies": {
+    "lite-server": "^2.4.0",
+    "napa": "^3.0.0"
+  },
+  "private": true
+}
