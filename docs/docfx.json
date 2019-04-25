@@ -59,7 +59,7 @@
     "globalMetadata": {
       "_appTitle": "Docs",
       "_appFooter": "Copyright © 2018 SoftFrame",
-      "_appLogoPath": "assets/images/logo-xs.png",
+      "_appLogoPath": "assets/favicons/favicon.png",
       "_appFaviconPath": "assets/favicons/favicon.ico"
     },
     "fileMetadata": {

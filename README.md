@@ -1,8 +1,9 @@
-<header>
+<link rel="stylesheet" type="text/css" href="assets/styles/readme.css">
+<div id="readme-header">
     <p id="readme-logo" align="center">
         <img alt="RailSharp" src="https://imgur.com/h5hgvh7.png" height="200px">
     </p>
-    <h1 id="readme-title" align="center">RailSharp#</h1>
+    <h1 id="readme-title" align="center">RailSharp</h1>
     <p id="readme-badges" align="center">
         <a href="https://dev.azure.com/SoftFrame/RailSharp/_release?definitionId=2&_a=deployments">
             <img alt="Azure DevOps releases" src="https://img.shields.io/azure-devops/release/softframe/c8394a74-6f1e-441d-8ef1-8a1845f52445/2/5.svg?style=flat-square">
@@ -26,10 +27,10 @@
     <p id="readme-summary" align="center">
         A small railway oriented library that offers a simple implementation of the <a href="http://codinghelmet.com/articles/understanding-the-option-maybe-functional-type">Option type</a> and Result type in C#.
     </p>
-    <nav id="readme-quick-links" align="center">
+    <div id="readme-quick-links" align="center">
         <!-- <b>Quick links:</b> {{ links }} -->
-    </nav>
-</header>
+    </div>
+</div>
 
 # What is RailSharp?
 
@@ -55,13 +56,13 @@ Otherwise, you can check if it's already fixed by pulling the [develop branch][d
 
 If you still hit a problem, please document it and post it [here][new-issue-url].
 
-# License
-
-RailSharp is Copyright © 2018 SoftFrame under the [MIT license][license-url].
-
 # Credits
 
 The original code has been inspired from the Pluralsight course [Making Your C# Code More Functional](https://www.pluralsight.com/courses/making-functional-csharp) by [Zoran Horvat](https://www.pluralsight.com/authors/zoran-horvat).
+
+# License
+
+RailSharp is Copyright © 2018 SoftFrame under the [MIT license][license-url].
 
 <!-- Resources: -->
 [develop-branch-url]: https://github.com/softframe/railsharp/tree/develop
