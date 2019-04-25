@@ -25,14 +25,14 @@ steps:
     displayName: Build
     inputs:
       command: build
-      projects: '**/*.csproj'
+      projects: 'src/**/*.csproj'
       configuration: $(configuration)
   
   - task: DotNetCoreCLI@2
     displayName: Test
     inputs:
       command: test
-      projects: '**/*Test*.csproj'
+      projects: 'src/**/*Test*.csproj'
       configuration: $(configuration)
       nobuild: true
       arguments: /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:Include="[$(System.TeamProject)*]*" /p:Exclude="[*Test*]*"
@@ -49,7 +49,20 @@ steps:
       summaryFileLocation: '$(Build.SourcesDirectory)/CodeCoverage/Cobertura.xml'
 
   - task: DotNetCoreCLI@2
-    displayName: Pack
+    displayName: Build documentation
+    inputs:
+      command: build
+      projects: 'docs/*.csproj'
+      configuration: $(configuration)
+
+  - task: PublishBuildArtifacts@1
+    displayName: Publish documentation artifact
+    inputs:
+      pathToPublish: '$(Join-Path -Path Build.SourcesDirectory -ChildPath "docs/_site")'
+      ArtifactName: docs
+
+  - task: DotNetCoreCLI@2
+    displayName: Pack NuGet packages
     inputs:
       command: pack
       packDirectory: '$(Build.ArtifactStagingDirectory)'
@@ -58,6 +71,7 @@ steps:
       nobuild: true
  
   - task: PublishBuildArtifacts@1
-    displayName: Publish build artifacts
+    displayName: Publish NuGet packages artifact
     inputs:
-      pathtoPublish: '$(Build.ArtifactStagingDirectory)'
+      pathToPublish: '$(Build.ArtifactStagingDirectory)'
+      ArtifactName: nupkgs
