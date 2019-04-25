@@ -53,7 +53,7 @@ steps:
     inputs:
       command: custom
       customCommand: run build
-      workingDir: '$(Join-Path -Path Build.SourcesDirectory -ChildPath "docs")'
+      workingDir: docs
 
   - task: PublishBuildArtifacts@1
     displayName: Publish documentation artifact
