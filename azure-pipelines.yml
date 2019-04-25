@@ -48,12 +48,12 @@ steps:
       codeCoverageTool: Cobertura
       summaryFileLocation: '$(Build.SourcesDirectory)/CodeCoverage/Cobertura.xml'
 
-  - task: DotNetCoreCLI@2
+  - task: Npm@1
     displayName: Build documentation
     inputs:
-      command: build
-      projects: 'docs/*.csproj'
-      configuration: $(configuration)
+      command: custom
+      customCommand: run build
+      workingDir: '$(Join-Path -Path Build.SourcesDirectory -ChildPath "docs")'
 
   - task: PublishBuildArtifacts@1
     displayName: Publish documentation artifact
@@ -66,9 +66,9 @@ steps:
     inputs:
       command: pack
       packDirectory: '$(Build.ArtifactStagingDirectory)'
-      workingDirectory: '$(Join-Path -Path Build.SourcesDirectory -ChildPath "src")'
       configuration: $(configuration)
       nobuild: true
+      workingDirectory: '$(Join-Path -Path Build.SourcesDirectory -ChildPath "src")'
  
   - task: PublishBuildArtifacts@1
     displayName: Publish NuGet packages artifact
