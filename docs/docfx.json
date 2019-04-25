@@ -57,10 +57,15 @@
     ],
     "dest": "_site",
     "globalMetadata": {
-      "_appTitle": "RailSharp",
+      "_appTitle": "Docs",
       "_appFooter": "Copyright © 2018 SoftFrame",
-      "_appLogoPath": "",
-      "_appFaviconPath": ""
+      "_appLogoPath": "assets/images/logo-xs.png",
+      "_appFaviconPath": "assets/favicons/favicon.ico"
+    },
+    "fileMetadata": {
+      "_disableAffix": {
+        "index.md": true
+      }
     },
     "template": [
       "default",
