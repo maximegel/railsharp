@@ -9,10 +9,12 @@
     "rebuild": "npm run clean && npm run build",
     "serve": "cd ./_site && lite-server"
   },
-  "devDependencies": {
-    "lite-server": "^2.4.0",
+  "dependencies": {
     "napa": "^3.0.0",
     "shx": "^0.3.2"
+  },
+  "devDependencies": {
+    "lite-server": "^2.4.0"
   },
   "private": true
 }

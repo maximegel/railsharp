@@ -49,6 +49,13 @@ steps:
       summaryFileLocation: '$(Build.SourcesDirectory)/CodeCoverage/Cobertura.xml'
 
   - task: Npm@1
+    displayName: Set up documentation CLI
+    inputs:
+      command: custom
+      customCommand: install --only=prod
+      workingDir: docs
+
+  - task: Npm@1
     displayName: Build documentation
     inputs:
       command: custom
