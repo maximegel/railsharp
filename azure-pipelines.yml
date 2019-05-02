@@ -88,7 +88,7 @@ steps:
       docPath: docs/_site
       githubUsername: softframe
       githubEmail: mgelinas@softframe.net
-      githubAccessToken: 7c44a82d944cdef3d4e7752b2594cc4f1f65a5d0
+      githubAccessToken: f1e4a8d107296ef2ab806fdbc57276b75797935d
       repositoryName: railsharp
       branchName: gh-pages
       commitMessage: 'Automated Build $(Build.BuildNumber)'
