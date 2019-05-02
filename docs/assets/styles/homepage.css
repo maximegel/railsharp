@@ -1,0 +1,99 @@
+[role="main"] {
+    width: 100%;
+}
+
+[role="main"] > .article {
+    margin-top: 0 !important;
+}
+
+@media (min-width: 992px) {
+    [role="main"] > .article {
+        margin-top: 80px !important;
+    }
+}
+
+[role="main"] > .article > [class|="col"] {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.banner {
+    margin-bottom: 75px;
+    position: relative;
+}
+
+.banner-content {
+    background-image: url('/assets/images/banner.png');
+    background-size: cover;
+    background-position: center center;
+    padding: 10vh 0;
+    text-align: center;
+}
+
+.banner-content .banner-img > img {
+    float: center;
+}
+
+.banner-content .banner-txt {
+    padding-left: 3vw;
+}
+
+.banner-btn {
+    left: 50%;
+    position: absolute;
+    top: calc(100% - 17px);
+    transform: translateX(-50%);
+}
+
+.banner-btn > i {
+    font-size: 1.2em;
+    font-style: normal;
+    padding-right: 6px;
+}
+
+.banner-btn > i::before {
+    font-family: "Font Awesome 5 Brands";
+    content: "\f09b";
+}
+
+.banner-btn > span {
+    vertical-align: text-bottom;
+}
+
+.banner-btn > span::after {
+    content: 'View on GitHub';
+}
+
+@media (min-width: 992px) {
+    .banner-content * {
+        text-align: left;
+    }
+
+    .banner-content .banner-img > img {
+        float: right;
+    }
+
+    .banner-btn {
+        left: 80%;
+    }
+}
+
+.banner ~ * {
+    max-width: 1012px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+@media (min-width: 992px) {
+    .banner ~ * {
+        margin-left: calc(100% / 12);
+        margin-right: calc(100% / 12);
+    }
+}
+
+@media (min-width: 1200px) {
+    .banner ~ * {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

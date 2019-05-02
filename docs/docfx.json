@@ -32,8 +32,7 @@
       {
         "files": [
           "articles/**.md",
-          "articles/**/toc.yml",
-          "toc.yml",
+          "**/toc.yml",
           "*.md"
         ]
       }
@@ -60,9 +59,15 @@
       "_appTitle": "Docs",
       "_appFooter": "Copyright © 2018 SoftFrame",
       "_appLogoPath": "assets/favicons/favicon.png",
-      "_appFaviconPath": "assets/favicons/favicon.ico"
+      "_appFaviconPath": "assets/favicons/favicon.ico",
+      "_enableSearch": true,
+      "_enableNewTab": true,
+      "_disableNavbar": false
     },
     "fileMetadata": {
+      "_disableToc": {
+        "index.md": false
+      },
       "_disableAffix": {
         "index.md": true
       }

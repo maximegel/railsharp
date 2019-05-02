@@ -1,6 +1,6 @@
 {
-  "name": "railsharp-docs-cli",
-  "description": "RailSharp documentation CLI",
+  "name": "docs-cli",
+  "description": "Documentation CLI",
   "scripts": {
     "install": "napa steffen-wilke/darkfx",
     "start": "npm run build && npm run serve",
