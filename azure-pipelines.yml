@@ -82,3 +82,12 @@ steps:
     inputs:
       pathToPublish: '$(Build.ArtifactStagingDirectory)'
       ArtifactName: nupkgs
+
+  - task: GitHubPagesPublish@1
+    inputs:
+      docPath: docs/_site
+      githubUsername: softframe
+      githubAccessToken: 7c44a82d944cdef3d4e7752b2594cc4f1f65a5d0
+      repositoryName: railsharp
+      branchName: gh-pages
+      commitMessage: 'Automated Build $(Build.BuildNumber)'
