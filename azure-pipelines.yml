@@ -10,7 +10,7 @@ trigger:
       - README.md
 
 pool:
-  vmImage: windows-latest
+  vmImage: vs2017-win2016
 
 variables:
   configuration: Release
@@ -65,7 +65,7 @@ steps:
   - task: PublishBuildArtifacts@1
     displayName: Publish documentation artifact
     inputs:
-      pathToPublish: '$(Join-Path -Path Build.SourcesDirectory -ChildPath "docs/_site")'
+      pathToPublish: docs/_site
       ArtifactName: docs
 
   - task: DotNetCoreCLI@2
@@ -75,7 +75,7 @@ steps:
       packDirectory: '$(Build.ArtifactStagingDirectory)'
       configuration: $(configuration)
       nobuild: true
-      workingDirectory: '$(Join-Path -Path Build.SourcesDirectory -ChildPath "src")'
+      workingDirectory: src
  
   - task: PublishBuildArtifacts@1
     displayName: Publish NuGet packages artifact
