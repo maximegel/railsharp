@@ -23,7 +23,7 @@
 }
 
 .banner-content {
-    background-image: url('/assets/images/banner.png');
+    background-image: url('../images/banner.png');
     background-size: cover;
     background-position: center center;
     padding: 10vh 0;
