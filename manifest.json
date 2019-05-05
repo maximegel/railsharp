@@ -1,0 +1,270 @@
+{
+  "homepages": [],
+  "source_base_path": "D:/Git/softframe/railsharp/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RailSharp.Option-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RailSharp.Option-1.html",
+          "hash": "Bc/MtXgCoAbcvB+Z8hl9xw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RailSharp.Option.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RailSharp.Option.html",
+          "hash": "WoKg6/QUdHrcWrt+zv5jCA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RailSharp.OptionAdapters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RailSharp.OptionAdapters.html",
+          "hash": "8aEDlmCmEYXy+2hTPtxxvQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RailSharp.OptionExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RailSharp.OptionExtensions.html",
+          "hash": "ZLnXwPAsUG8VndP0QmqWOQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RailSharp.Result-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RailSharp.Result-1.html",
+          "hash": "qhxN5tYPC3hLaC8vlU7N3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RailSharp.Result-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RailSharp.Result-2.html",
+          "hash": "E3vglqPtbajDyLnG7kp4Ig=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RailSharp.Result.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RailSharp.Result.html",
+          "hash": "oe3l3zmeieicxiArP6bdgg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RailSharp.ResultExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RailSharp.ResultExtensions.html",
+          "hash": "bFloGZu1DPBaJruwL5uHjA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/RailSharp.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/RailSharp.html",
+          "hash": "0uWWAHFsby6ZINSpQDUIJQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "QUSwbeZ7JUcOuNgyyxzftg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/getting-started.html",
+          "hash": "e2hZCVD51NHp1zjGJOh92g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "ULc3bwbupMYelWINVPJgZQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "assets/favicons/favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "assets/favicons/favicon.ico"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "assets/favicons/favicon.png",
+      "output": {
+        "resource": {
+          "relative_path": "assets/favicons/favicon.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "assets/images/banner.png",
+      "output": {
+        "resource": {
+          "relative_path": "assets/images/banner.png"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "assets/styles/homepage.css",
+      "output": {
+        "resource": {
+          "relative_path": "assets/styles/homepage.css"
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "MnlZMW+g0IH1yuuiZMI5Pg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 9,
+          "skipped_file_count": 9
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 2,
+          "skipped_file_count": 2
+        },
+        "ResourceDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor ResourceDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

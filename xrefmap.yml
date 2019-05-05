@@ -1,0 +1,541 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: RailSharp
+  name: RailSharp
+  href: api/RailSharp.html
+  commentId: N:RailSharp
+  fullName: RailSharp
+  nameWithType: RailSharp
+- uid: RailSharp.Option
+  name: Option
+  href: api/RailSharp.Option.html
+  commentId: T:RailSharp.Option
+  fullName: RailSharp.Option
+  nameWithType: Option
+- uid: RailSharp.Option.From*
+  name: From
+  href: api/RailSharp.Option.html#RailSharp_Option_From_
+  commentId: Overload:RailSharp.Option.From
+  isSpec: "True"
+  fullName: RailSharp.Option.From
+  nameWithType: Option.From
+- uid: RailSharp.Option.From``1(``0)
+  name: From<T>(T)
+  href: api/RailSharp.Option.html#RailSharp_Option_From__1___0_
+  commentId: M:RailSharp.Option.From``1(``0)
+  name.vb: From(Of T)(T)
+  fullName: RailSharp.Option.From<T>(T)
+  fullName.vb: RailSharp.Option.From(Of T)(T)
+  nameWithType: Option.From<T>(T)
+  nameWithType.vb: Option.From(Of T)(T)
+- uid: RailSharp.Option.None
+  name: None
+  href: api/RailSharp.Option.html#RailSharp_Option_None
+  commentId: P:RailSharp.Option.None
+  fullName: RailSharp.Option.None
+  nameWithType: Option.None
+- uid: RailSharp.Option.None*
+  name: None
+  href: api/RailSharp.Option.html#RailSharp_Option_None_
+  commentId: Overload:RailSharp.Option.None
+  isSpec: "True"
+  fullName: RailSharp.Option.None
+  nameWithType: Option.None
+- uid: RailSharp.Option.Some*
+  name: Some
+  href: api/RailSharp.Option.html#RailSharp_Option_Some_
+  commentId: Overload:RailSharp.Option.Some
+  isSpec: "True"
+  fullName: RailSharp.Option.Some
+  nameWithType: Option.Some
+- uid: RailSharp.Option.Some``1(``0)
+  name: Some<T>(T)
+  href: api/RailSharp.Option.html#RailSharp_Option_Some__1___0_
+  commentId: M:RailSharp.Option.Some``1(``0)
+  name.vb: Some(Of T)(T)
+  fullName: RailSharp.Option.Some<T>(T)
+  fullName.vb: RailSharp.Option.Some(Of T)(T)
+  nameWithType: Option.Some<T>(T)
+  nameWithType.vb: Option.Some(Of T)(T)
+- uid: RailSharp.Option`1
+  name: Option<T>
+  href: api/RailSharp.Option-1.html
+  commentId: T:RailSharp.Option`1
+  name.vb: Option(Of T)
+  fullName: RailSharp.Option<T>
+  fullName.vb: RailSharp.Option(Of T)
+  nameWithType: Option<T>
+  nameWithType.vb: Option(Of T)
+- uid: RailSharp.Option`1.None
+  name: None
+  href: api/RailSharp.Option-1.html#RailSharp_Option_1_None
+  commentId: P:RailSharp.Option`1.None
+  fullName: RailSharp.Option<T>.None
+  fullName.vb: RailSharp.Option(Of T).None
+  nameWithType: Option<T>.None
+  nameWithType.vb: Option(Of T).None
+- uid: RailSharp.Option`1.None*
+  name: None
+  href: api/RailSharp.Option-1.html#RailSharp_Option_1_None_
+  commentId: Overload:RailSharp.Option`1.None
+  isSpec: "True"
+  fullName: RailSharp.Option<T>.None
+  fullName.vb: RailSharp.Option(Of T).None
+  nameWithType: Option<T>.None
+  nameWithType.vb: Option(Of T).None
+- uid: RailSharp.Option`1.op_Implicit(`0)~RailSharp.Option{`0}
+  name: Implicit(T to Option<T>)
+  href: api/RailSharp.Option-1.html#RailSharp_Option_1_op_Implicit__0__RailSharp_Option__0_
+  commentId: M:RailSharp.Option`1.op_Implicit(`0)~RailSharp.Option{`0}
+  name.vb: Widening(T to Option(Of T))
+  fullName: RailSharp.Option<T>.Implicit(T to RailSharp.Option<T>)
+  fullName.vb: RailSharp.Option(Of T).Widening(T to RailSharp.Option(Of T))
+  nameWithType: Option<T>.Implicit(T to Option<T>)
+  nameWithType.vb: Option(Of T).Widening(T to Option(Of T))
+- uid: RailSharp.Option`1.op_Implicit(RailSharp.Internal.Option.None)~RailSharp.Option{`0}
+  name: Implicit(None to Option<T>)
+  href: api/RailSharp.Option-1.html#RailSharp_Option_1_op_Implicit_RailSharp_Internal_Option_None__RailSharp_Option__0_
+  commentId: M:RailSharp.Option`1.op_Implicit(RailSharp.Internal.Option.None)~RailSharp.Option{`0}
+  name.vb: Widening(None to Option(Of T))
+  fullName: RailSharp.Option<T>.Implicit(RailSharp.Internal.Option.None to RailSharp.Option<T>)
+  fullName.vb: RailSharp.Option(Of T).Widening(RailSharp.Internal.Option.None to RailSharp.Option(Of T))
+  nameWithType: Option<T>.Implicit(None to Option<T>)
+  nameWithType.vb: Option(Of T).Widening(None to Option(Of T))
+- uid: RailSharp.Option`1.op_Implicit*
+  name: Implicit
+  href: api/RailSharp.Option-1.html#RailSharp_Option_1_op_Implicit_
+  commentId: Overload:RailSharp.Option`1.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: RailSharp.Option<T>.Implicit
+  fullName.vb: RailSharp.Option(Of T).Widening
+  nameWithType: Option<T>.Implicit
+  nameWithType.vb: Option(Of T).Widening
+- uid: RailSharp.OptionAdapters
+  name: OptionAdapters
+  href: api/RailSharp.OptionAdapters.html
+  commentId: T:RailSharp.OptionAdapters
+  fullName: RailSharp.OptionAdapters
+  nameWithType: OptionAdapters
+- uid: RailSharp.OptionAdapters.Flatten*
+  name: Flatten
+  href: api/RailSharp.OptionAdapters.html#RailSharp_OptionAdapters_Flatten_
+  commentId: Overload:RailSharp.OptionAdapters.Flatten
+  isSpec: "True"
+  fullName: RailSharp.OptionAdapters.Flatten
+  nameWithType: OptionAdapters.Flatten
+- uid: RailSharp.OptionAdapters.Flatten``1(IEnumerable{RailSharp.Option{``0}})
+  name: Flatten<T>(IEnumerable<Option<T>>)
+  href: api/RailSharp.OptionAdapters.html#RailSharp_OptionAdapters_Flatten__1_IEnumerable_RailSharp_Option___0___
+  commentId: M:RailSharp.OptionAdapters.Flatten``1(IEnumerable{RailSharp.Option{``0}})
+  name.vb: Flatten(Of T)(IEnumerable(Of Option(Of T)))
+  fullName: RailSharp.OptionAdapters.Flatten<T>(IEnumerable<RailSharp.Option<T>>)
+  fullName.vb: RailSharp.OptionAdapters.Flatten(Of T)(IEnumerable(Of RailSharp.Option(Of T)))
+  nameWithType: OptionAdapters.Flatten<T>(IEnumerable<Option<T>>)
+  nameWithType.vb: OptionAdapters.Flatten(Of T)(IEnumerable(Of Option(Of T)))
+- uid: RailSharp.OptionAdapters.TryFirst*
+  name: TryFirst
+  href: api/RailSharp.OptionAdapters.html#RailSharp_OptionAdapters_TryFirst_
+  commentId: Overload:RailSharp.OptionAdapters.TryFirst
+  isSpec: "True"
+  fullName: RailSharp.OptionAdapters.TryFirst
+  nameWithType: OptionAdapters.TryFirst
+- uid: RailSharp.OptionAdapters.TryFirst``1(IEnumerable{``0})
+  name: TryFirst<T>(IEnumerable<T>)
+  href: api/RailSharp.OptionAdapters.html#RailSharp_OptionAdapters_TryFirst__1_IEnumerable___0__
+  commentId: M:RailSharp.OptionAdapters.TryFirst``1(IEnumerable{``0})
+  name.vb: TryFirst(Of T)(IEnumerable(Of T))
+  fullName: RailSharp.OptionAdapters.TryFirst<T>(IEnumerable<T>)
+  fullName.vb: RailSharp.OptionAdapters.TryFirst(Of T)(IEnumerable(Of T))
+  nameWithType: OptionAdapters.TryFirst<T>(IEnumerable<T>)
+  nameWithType.vb: OptionAdapters.TryFirst(Of T)(IEnumerable(Of T))
+- uid: RailSharp.OptionAdapters.TryFirst``1(IEnumerable{``0},Func{``0,System.Boolean})
+  name: TryFirst<T>(IEnumerable<T>, Func<T, Boolean>)
+  href: api/RailSharp.OptionAdapters.html#RailSharp_OptionAdapters_TryFirst__1_IEnumerable___0__Func___0_System_Boolean__
+  commentId: M:RailSharp.OptionAdapters.TryFirst``1(IEnumerable{``0},Func{``0,System.Boolean})
+  name.vb: TryFirst(Of T)(IEnumerable(Of T), Func(Of T, Boolean))
+  fullName: RailSharp.OptionAdapters.TryFirst<T>(IEnumerable<T>, Func<T, System.Boolean>)
+  fullName.vb: RailSharp.OptionAdapters.TryFirst(Of T)(IEnumerable(Of T), Func(Of T, System.Boolean))
+  nameWithType: OptionAdapters.TryFirst<T>(IEnumerable<T>, Func<T, Boolean>)
+  nameWithType.vb: OptionAdapters.TryFirst(Of T)(IEnumerable(Of T), Func(Of T, Boolean))
+- uid: RailSharp.OptionAdapters.TryGetValue*
+  name: TryGetValue
+  href: api/RailSharp.OptionAdapters.html#RailSharp_OptionAdapters_TryGetValue_
+  commentId: Overload:RailSharp.OptionAdapters.TryGetValue
+  isSpec: "True"
+  fullName: RailSharp.OptionAdapters.TryGetValue
+  nameWithType: OptionAdapters.TryGetValue
+- uid: RailSharp.OptionAdapters.TryGetValue``2(IDictionary{``0,``1},``0)
+  name: TryGetValue<TKey, TValue>(IDictionary<TKey, TValue>, TKey)
+  href: api/RailSharp.OptionAdapters.html#RailSharp_OptionAdapters_TryGetValue__2_IDictionary___0___1____0_
+  commentId: M:RailSharp.OptionAdapters.TryGetValue``2(IDictionary{``0,``1},``0)
+  name.vb: TryGetValue(Of TKey, TValue)(IDictionary(Of TKey, TValue), TKey)
+  fullName: RailSharp.OptionAdapters.TryGetValue<TKey, TValue>(IDictionary<TKey, TValue>, TKey)
+  fullName.vb: RailSharp.OptionAdapters.TryGetValue(Of TKey, TValue)(IDictionary(Of TKey, TValue), TKey)
+  nameWithType: OptionAdapters.TryGetValue<TKey, TValue>(IDictionary<TKey, TValue>, TKey)
+  nameWithType.vb: OptionAdapters.TryGetValue(Of TKey, TValue)(IDictionary(Of TKey, TValue), TKey)
+- uid: RailSharp.OptionAdapters.TrySingle*
+  name: TrySingle
+  href: api/RailSharp.OptionAdapters.html#RailSharp_OptionAdapters_TrySingle_
+  commentId: Overload:RailSharp.OptionAdapters.TrySingle
+  isSpec: "True"
+  fullName: RailSharp.OptionAdapters.TrySingle
+  nameWithType: OptionAdapters.TrySingle
+- uid: RailSharp.OptionAdapters.TrySingle``1(IEnumerable{``0})
+  name: TrySingle<T>(IEnumerable<T>)
+  href: api/RailSharp.OptionAdapters.html#RailSharp_OptionAdapters_TrySingle__1_IEnumerable___0__
+  commentId: M:RailSharp.OptionAdapters.TrySingle``1(IEnumerable{``0})
+  name.vb: TrySingle(Of T)(IEnumerable(Of T))
+  fullName: RailSharp.OptionAdapters.TrySingle<T>(IEnumerable<T>)
+  fullName.vb: RailSharp.OptionAdapters.TrySingle(Of T)(IEnumerable(Of T))
+  nameWithType: OptionAdapters.TrySingle<T>(IEnumerable<T>)
+  nameWithType.vb: OptionAdapters.TrySingle(Of T)(IEnumerable(Of T))
+- uid: RailSharp.OptionAdapters.TrySingle``1(IEnumerable{``0},Func{``0,System.Boolean})
+  name: TrySingle<T>(IEnumerable<T>, Func<T, Boolean>)
+  href: api/RailSharp.OptionAdapters.html#RailSharp_OptionAdapters_TrySingle__1_IEnumerable___0__Func___0_System_Boolean__
+  commentId: M:RailSharp.OptionAdapters.TrySingle``1(IEnumerable{``0},Func{``0,System.Boolean})
+  name.vb: TrySingle(Of T)(IEnumerable(Of T), Func(Of T, Boolean))
+  fullName: RailSharp.OptionAdapters.TrySingle<T>(IEnumerable<T>, Func<T, System.Boolean>)
+  fullName.vb: RailSharp.OptionAdapters.TrySingle(Of T)(IEnumerable(Of T), Func(Of T, System.Boolean))
+  nameWithType: OptionAdapters.TrySingle<T>(IEnumerable<T>, Func<T, Boolean>)
+  nameWithType.vb: OptionAdapters.TrySingle(Of T)(IEnumerable(Of T), Func(Of T, Boolean))
+- uid: RailSharp.OptionAdapters.When*
+  name: When
+  href: api/RailSharp.OptionAdapters.html#RailSharp_OptionAdapters_When_
+  commentId: Overload:RailSharp.OptionAdapters.When
+  isSpec: "True"
+  fullName: RailSharp.OptionAdapters.When
+  nameWithType: OptionAdapters.When
+- uid: RailSharp.OptionAdapters.When``1(``0,Func{``0,System.Boolean})
+  name: When<T>(T, Func<T, Boolean>)
+  href: api/RailSharp.OptionAdapters.html#RailSharp_OptionAdapters_When__1___0_Func___0_System_Boolean__
+  commentId: M:RailSharp.OptionAdapters.When``1(``0,Func{``0,System.Boolean})
+  name.vb: When(Of T)(T, Func(Of T, Boolean))
+  fullName: RailSharp.OptionAdapters.When<T>(T, Func<T, System.Boolean>)
+  fullName.vb: RailSharp.OptionAdapters.When(Of T)(T, Func(Of T, System.Boolean))
+  nameWithType: OptionAdapters.When<T>(T, Func<T, Boolean>)
+  nameWithType.vb: OptionAdapters.When(Of T)(T, Func(Of T, Boolean))
+- uid: RailSharp.OptionExtensions
+  name: OptionExtensions
+  href: api/RailSharp.OptionExtensions.html
+  commentId: T:RailSharp.OptionExtensions
+  fullName: RailSharp.OptionExtensions
+  nameWithType: OptionExtensions
+- uid: RailSharp.OptionExtensions.Do*
+  name: Do
+  href: api/RailSharp.OptionExtensions.html#RailSharp_OptionExtensions_Do_
+  commentId: Overload:RailSharp.OptionExtensions.Do
+  isSpec: "True"
+  fullName: RailSharp.OptionExtensions.Do
+  nameWithType: OptionExtensions.Do
+- uid: RailSharp.OptionExtensions.Do``1(RailSharp.Option{``0},Action{``0})
+  name: Do<T>(Option<T>, Action<T>)
+  href: api/RailSharp.OptionExtensions.html#RailSharp_OptionExtensions_Do__1_RailSharp_Option___0__Action___0__
+  commentId: M:RailSharp.OptionExtensions.Do``1(RailSharp.Option{``0},Action{``0})
+  name.vb: Do(Of T)(Option(Of T), Action(Of T))
+  fullName: RailSharp.OptionExtensions.Do<T>(RailSharp.Option<T>, Action<T>)
+  fullName.vb: RailSharp.OptionExtensions.Do(Of T)(RailSharp.Option(Of T), Action(Of T))
+  nameWithType: OptionExtensions.Do<T>(Option<T>, Action<T>)
+  nameWithType.vb: OptionExtensions.Do(Of T)(Option(Of T), Action(Of T))
+- uid: RailSharp.OptionExtensions.Map*
+  name: Map
+  href: api/RailSharp.OptionExtensions.html#RailSharp_OptionExtensions_Map_
+  commentId: Overload:RailSharp.OptionExtensions.Map
+  isSpec: "True"
+  fullName: RailSharp.OptionExtensions.Map
+  nameWithType: OptionExtensions.Map
+- uid: RailSharp.OptionExtensions.Map``2(RailSharp.Option{``0},Func{``0,``1})
+  name: Map<T, TResult>(Option<T>, Func<T, TResult>)
+  href: api/RailSharp.OptionExtensions.html#RailSharp_OptionExtensions_Map__2_RailSharp_Option___0__Func___0___1__
+  commentId: M:RailSharp.OptionExtensions.Map``2(RailSharp.Option{``0},Func{``0,``1})
+  name.vb: Map(Of T, TResult)(Option(Of T), Func(Of T, TResult))
+  fullName: RailSharp.OptionExtensions.Map<T, TResult>(RailSharp.Option<T>, Func<T, TResult>)
+  fullName.vb: RailSharp.OptionExtensions.Map(Of T, TResult)(RailSharp.Option(Of T), Func(Of T, TResult))
+  nameWithType: OptionExtensions.Map<T, TResult>(Option<T>, Func<T, TResult>)
+  nameWithType.vb: OptionExtensions.Map(Of T, TResult)(Option(Of T), Func(Of T, TResult))
+- uid: RailSharp.OptionExtensions.Reduce*
+  name: Reduce
+  href: api/RailSharp.OptionExtensions.html#RailSharp_OptionExtensions_Reduce_
+  commentId: Overload:RailSharp.OptionExtensions.Reduce
+  isSpec: "True"
+  fullName: RailSharp.OptionExtensions.Reduce
+  nameWithType: OptionExtensions.Reduce
+- uid: RailSharp.OptionExtensions.Reduce``1(RailSharp.Option{``0},``0)
+  name: Reduce<T>(Option<T>, T)
+  href: api/RailSharp.OptionExtensions.html#RailSharp_OptionExtensions_Reduce__1_RailSharp_Option___0____0_
+  commentId: M:RailSharp.OptionExtensions.Reduce``1(RailSharp.Option{``0},``0)
+  name.vb: Reduce(Of T)(Option(Of T), T)
+  fullName: RailSharp.OptionExtensions.Reduce<T>(RailSharp.Option<T>, T)
+  fullName.vb: RailSharp.OptionExtensions.Reduce(Of T)(RailSharp.Option(Of T), T)
+  nameWithType: OptionExtensions.Reduce<T>(Option<T>, T)
+  nameWithType.vb: OptionExtensions.Reduce(Of T)(Option(Of T), T)
+- uid: RailSharp.OptionExtensions.Reduce``1(RailSharp.Option{``0},Func{``0})
+  name: Reduce<T>(Option<T>, Func<T>)
+  href: api/RailSharp.OptionExtensions.html#RailSharp_OptionExtensions_Reduce__1_RailSharp_Option___0__Func___0__
+  commentId: M:RailSharp.OptionExtensions.Reduce``1(RailSharp.Option{``0},Func{``0})
+  name.vb: Reduce(Of T)(Option(Of T), Func(Of T))
+  fullName: RailSharp.OptionExtensions.Reduce<T>(RailSharp.Option<T>, Func<T>)
+  fullName.vb: RailSharp.OptionExtensions.Reduce(Of T)(RailSharp.Option(Of T), Func(Of T))
+  nameWithType: OptionExtensions.Reduce<T>(Option<T>, Func<T>)
+  nameWithType.vb: OptionExtensions.Reduce(Of T)(Option(Of T), Func(Of T))
+- uid: RailSharp.OptionExtensions.When*
+  name: When
+  href: api/RailSharp.OptionExtensions.html#RailSharp_OptionExtensions_When_
+  commentId: Overload:RailSharp.OptionExtensions.When
+  isSpec: "True"
+  fullName: RailSharp.OptionExtensions.When
+  nameWithType: OptionExtensions.When
+- uid: RailSharp.OptionExtensions.When``1(RailSharp.Option{``0},Func{``0,System.Boolean})
+  name: When<T>(Option<T>, Func<T, Boolean>)
+  href: api/RailSharp.OptionExtensions.html#RailSharp_OptionExtensions_When__1_RailSharp_Option___0__Func___0_System_Boolean__
+  commentId: M:RailSharp.OptionExtensions.When``1(RailSharp.Option{``0},Func{``0,System.Boolean})
+  name.vb: When(Of T)(Option(Of T), Func(Of T, Boolean))
+  fullName: RailSharp.OptionExtensions.When<T>(RailSharp.Option<T>, Func<T, System.Boolean>)
+  fullName.vb: RailSharp.OptionExtensions.When(Of T)(RailSharp.Option(Of T), Func(Of T, System.Boolean))
+  nameWithType: OptionExtensions.When<T>(Option<T>, Func<T, Boolean>)
+  nameWithType.vb: OptionExtensions.When(Of T)(Option(Of T), Func(Of T, Boolean))
+- uid: RailSharp.Result
+  name: Result
+  href: api/RailSharp.Result.html
+  commentId: T:RailSharp.Result
+  fullName: RailSharp.Result
+  nameWithType: Result
+- uid: RailSharp.Result.Failure*
+  name: Failure
+  href: api/RailSharp.Result.html#RailSharp_Result_Failure_
+  commentId: Overload:RailSharp.Result.Failure
+  isSpec: "True"
+  fullName: RailSharp.Result.Failure
+  nameWithType: Result.Failure
+- uid: RailSharp.Result.Failure``1(``0)
+  name: Failure<T>(T)
+  href: api/RailSharp.Result.html#RailSharp_Result_Failure__1___0_
+  commentId: M:RailSharp.Result.Failure``1(``0)
+  name.vb: Failure(Of T)(T)
+  fullName: RailSharp.Result.Failure<T>(T)
+  fullName.vb: RailSharp.Result.Failure(Of T)(T)
+  nameWithType: Result.Failure<T>(T)
+  nameWithType.vb: Result.Failure(Of T)(T)
+- uid: RailSharp.Result.Success
+  name: Success()
+  href: api/RailSharp.Result.html#RailSharp_Result_Success
+  commentId: M:RailSharp.Result.Success
+  fullName: RailSharp.Result.Success()
+  nameWithType: Result.Success()
+- uid: RailSharp.Result.Success*
+  name: Success
+  href: api/RailSharp.Result.html#RailSharp_Result_Success_
+  commentId: Overload:RailSharp.Result.Success
+  isSpec: "True"
+  fullName: RailSharp.Result.Success
+  nameWithType: Result.Success
+- uid: RailSharp.Result.Success``1(``0)
+  name: Success<T>(T)
+  href: api/RailSharp.Result.html#RailSharp_Result_Success__1___0_
+  commentId: M:RailSharp.Result.Success``1(``0)
+  name.vb: Success(Of T)(T)
+  fullName: RailSharp.Result.Success<T>(T)
+  fullName.vb: RailSharp.Result.Success(Of T)(T)
+  nameWithType: Result.Success<T>(T)
+  nameWithType.vb: Result.Success(Of T)(T)
+- uid: RailSharp.Result`1
+  name: Result<TFailure>
+  href: api/RailSharp.Result-1.html
+  commentId: T:RailSharp.Result`1
+  name.vb: Result(Of TFailure)
+  fullName: RailSharp.Result<TFailure>
+  fullName.vb: RailSharp.Result(Of TFailure)
+  nameWithType: Result<TFailure>
+  nameWithType.vb: Result(Of TFailure)
+- uid: RailSharp.Result`1.op_Implicit(`0)~RailSharp.Result{`0}
+  name: Implicit(TFailure to Result<TFailure>)
+  href: api/RailSharp.Result-1.html#RailSharp_Result_1_op_Implicit__0__RailSharp_Result__0_
+  commentId: M:RailSharp.Result`1.op_Implicit(`0)~RailSharp.Result{`0}
+  name.vb: Widening(TFailure to Result(Of TFailure))
+  fullName: RailSharp.Result<TFailure>.Implicit(TFailure to RailSharp.Result<TFailure>)
+  fullName.vb: RailSharp.Result(Of TFailure).Widening(TFailure to RailSharp.Result(Of TFailure))
+  nameWithType: Result<TFailure>.Implicit(TFailure to Result<TFailure>)
+  nameWithType.vb: Result(Of TFailure).Widening(TFailure to Result(Of TFailure))
+- uid: RailSharp.Result`1.op_Implicit(RailSharp.Internal.Result.VoidSuccess)~RailSharp.Result{`0}
+  name: Implicit(VoidSuccess to Result<TFailure>)
+  href: api/RailSharp.Result-1.html#RailSharp_Result_1_op_Implicit_RailSharp_Internal_Result_VoidSuccess__RailSharp_Result__0_
+  commentId: M:RailSharp.Result`1.op_Implicit(RailSharp.Internal.Result.VoidSuccess)~RailSharp.Result{`0}
+  name.vb: Widening(VoidSuccess to Result(Of TFailure))
+  fullName: RailSharp.Result<TFailure>.Implicit(RailSharp.Internal.Result.VoidSuccess to RailSharp.Result<TFailure>)
+  fullName.vb: RailSharp.Result(Of TFailure).Widening(RailSharp.Internal.Result.VoidSuccess to RailSharp.Result(Of TFailure))
+  nameWithType: Result<TFailure>.Implicit(VoidSuccess to Result<TFailure>)
+  nameWithType.vb: Result(Of TFailure).Widening(VoidSuccess to Result(Of TFailure))
+- uid: RailSharp.Result`1.op_Implicit*
+  name: Implicit
+  href: api/RailSharp.Result-1.html#RailSharp_Result_1_op_Implicit_
+  commentId: Overload:RailSharp.Result`1.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: RailSharp.Result<TFailure>.Implicit
+  fullName.vb: RailSharp.Result(Of TFailure).Widening
+  nameWithType: Result<TFailure>.Implicit
+  nameWithType.vb: Result(Of TFailure).Widening
+- uid: RailSharp.Result`2
+  name: Result<TFailure, TSuccess>
+  href: api/RailSharp.Result-2.html
+  commentId: T:RailSharp.Result`2
+  name.vb: Result(Of TFailure, TSuccess)
+  fullName: RailSharp.Result<TFailure, TSuccess>
+  fullName.vb: RailSharp.Result(Of TFailure, TSuccess)
+  nameWithType: Result<TFailure, TSuccess>
+  nameWithType.vb: Result(Of TFailure, TSuccess)
+- uid: RailSharp.Result`2.Catch*
+  name: Catch
+  href: api/RailSharp.Result-2.html#RailSharp_Result_2_Catch_
+  commentId: Overload:RailSharp.Result`2.Catch
+  isSpec: "True"
+  fullName: RailSharp.Result<TFailure, TSuccess>.Catch
+  fullName.vb: RailSharp.Result(Of TFailure, TSuccess).Catch
+  nameWithType: Result<TFailure, TSuccess>.Catch
+  nameWithType.vb: Result(Of TFailure, TSuccess).Catch
+- uid: RailSharp.Result`2.Catch``1(Func{``0,`1})
+  name: Catch<TCatch>(Func<TCatch, TSuccess>)
+  href: api/RailSharp.Result-2.html#RailSharp_Result_2_Catch__1_Func___0__1__
+  commentId: M:RailSharp.Result`2.Catch``1(Func{``0,`1})
+  name.vb: Catch(Of TCatch)(Func(Of TCatch, TSuccess))
+  fullName: RailSharp.Result<TFailure, TSuccess>.Catch<TCatch>(Func<TCatch, TSuccess>)
+  fullName.vb: RailSharp.Result(Of TFailure, TSuccess).Catch(Of TCatch)(Func(Of TCatch, TSuccess))
+  nameWithType: Result<TFailure, TSuccess>.Catch<TCatch>(Func<TCatch, TSuccess>)
+  nameWithType.vb: Result(Of TFailure, TSuccess).Catch(Of TCatch)(Func(Of TCatch, TSuccess))
+- uid: RailSharp.Result`2.Catch``1(Func{``0,System.Boolean},Func{``0,`1})
+  name: Catch<TCatch>(Func<TCatch, Boolean>, Func<TCatch, TSuccess>)
+  href: api/RailSharp.Result-2.html#RailSharp_Result_2_Catch__1_Func___0_System_Boolean__Func___0__1__
+  commentId: M:RailSharp.Result`2.Catch``1(Func{``0,System.Boolean},Func{``0,`1})
+  name.vb: Catch(Of TCatch)(Func(Of TCatch, Boolean), Func(Of TCatch, TSuccess))
+  fullName: RailSharp.Result<TFailure, TSuccess>.Catch<TCatch>(Func<TCatch, System.Boolean>, Func<TCatch, TSuccess>)
+  fullName.vb: RailSharp.Result(Of TFailure, TSuccess).Catch(Of TCatch)(Func(Of TCatch, System.Boolean), Func(Of TCatch, TSuccess))
+  nameWithType: Result<TFailure, TSuccess>.Catch<TCatch>(Func<TCatch, Boolean>, Func<TCatch, TSuccess>)
+  nameWithType.vb: Result(Of TFailure, TSuccess).Catch(Of TCatch)(Func(Of TCatch, Boolean), Func(Of TCatch, TSuccess))
+- uid: RailSharp.Result`2.op_Implicit(`0)~RailSharp.Result{`0,`1}
+  name: Implicit(TFailure to Result<TFailure, TSuccess>)
+  href: api/RailSharp.Result-2.html#RailSharp_Result_2_op_Implicit__0__RailSharp_Result__0__1_
+  commentId: M:RailSharp.Result`2.op_Implicit(`0)~RailSharp.Result{`0,`1}
+  name.vb: Widening(TFailure to Result(Of TFailure, TSuccess))
+  fullName: RailSharp.Result<TFailure, TSuccess>.Implicit(TFailure to RailSharp.Result<TFailure, TSuccess>)
+  fullName.vb: RailSharp.Result(Of TFailure, TSuccess).Widening(TFailure to RailSharp.Result(Of TFailure, TSuccess))
+  nameWithType: Result<TFailure, TSuccess>.Implicit(TFailure to Result<TFailure, TSuccess>)
+  nameWithType.vb: Result(Of TFailure, TSuccess).Widening(TFailure to Result(Of TFailure, TSuccess))
+- uid: RailSharp.Result`2.op_Implicit(`1)~RailSharp.Result{`0,`1}
+  name: Implicit(TSuccess to Result<TFailure, TSuccess>)
+  href: api/RailSharp.Result-2.html#RailSharp_Result_2_op_Implicit__1__RailSharp_Result__0__1_
+  commentId: M:RailSharp.Result`2.op_Implicit(`1)~RailSharp.Result{`0,`1}
+  name.vb: Widening(TSuccess to Result(Of TFailure, TSuccess))
+  fullName: RailSharp.Result<TFailure, TSuccess>.Implicit(TSuccess to RailSharp.Result<TFailure, TSuccess>)
+  fullName.vb: RailSharp.Result(Of TFailure, TSuccess).Widening(TSuccess to RailSharp.Result(Of TFailure, TSuccess))
+  nameWithType: Result<TFailure, TSuccess>.Implicit(TSuccess to Result<TFailure, TSuccess>)
+  nameWithType.vb: Result(Of TFailure, TSuccess).Widening(TSuccess to Result(Of TFailure, TSuccess))
+- uid: RailSharp.Result`2.op_Implicit(RailSharp.Internal.Result.Failure{`0})~RailSharp.Result{`0,`1}
+  name: Implicit(Failure<TFailure> to Result<TFailure, TSuccess>)
+  href: api/RailSharp.Result-2.html#RailSharp_Result_2_op_Implicit_RailSharp_Internal_Result_Failure__0___RailSharp_Result__0__1_
+  commentId: M:RailSharp.Result`2.op_Implicit(RailSharp.Internal.Result.Failure{`0})~RailSharp.Result{`0,`1}
+  name.vb: Widening(Failure(Of TFailure) to Result(Of TFailure, TSuccess))
+  fullName: RailSharp.Result<TFailure, TSuccess>.Implicit(RailSharp.Internal.Result.Failure<TFailure> to RailSharp.Result<TFailure, TSuccess>)
+  fullName.vb: RailSharp.Result(Of TFailure, TSuccess).Widening(RailSharp.Internal.Result.Failure(Of TFailure) to RailSharp.Result(Of TFailure, TSuccess))
+  nameWithType: Result<TFailure, TSuccess>.Implicit(Failure<TFailure> to Result<TFailure, TSuccess>)
+  nameWithType.vb: Result(Of TFailure, TSuccess).Widening(Failure(Of TFailure) to Result(Of TFailure, TSuccess))
+- uid: RailSharp.Result`2.op_Implicit(RailSharp.Internal.Result.Success{`1})~RailSharp.Result{`0,`1}
+  name: Implicit(Success<TSuccess> to Result<TFailure, TSuccess>)
+  href: api/RailSharp.Result-2.html#RailSharp_Result_2_op_Implicit_RailSharp_Internal_Result_Success__1___RailSharp_Result__0__1_
+  commentId: M:RailSharp.Result`2.op_Implicit(RailSharp.Internal.Result.Success{`1})~RailSharp.Result{`0,`1}
+  name.vb: Widening(Success(Of TSuccess) to Result(Of TFailure, TSuccess))
+  fullName: RailSharp.Result<TFailure, TSuccess>.Implicit(RailSharp.Internal.Result.Success<TSuccess> to RailSharp.Result<TFailure, TSuccess>)
+  fullName.vb: RailSharp.Result(Of TFailure, TSuccess).Widening(RailSharp.Internal.Result.Success(Of TSuccess) to RailSharp.Result(Of TFailure, TSuccess))
+  nameWithType: Result<TFailure, TSuccess>.Implicit(Success<TSuccess> to Result<TFailure, TSuccess>)
+  nameWithType.vb: Result(Of TFailure, TSuccess).Widening(Success(Of TSuccess) to Result(Of TFailure, TSuccess))
+- uid: RailSharp.Result`2.op_Implicit*
+  name: Implicit
+  href: api/RailSharp.Result-2.html#RailSharp_Result_2_op_Implicit_
+  commentId: Overload:RailSharp.Result`2.op_Implicit
+  isSpec: "True"
+  name.vb: Widening
+  fullName: RailSharp.Result<TFailure, TSuccess>.Implicit
+  fullName.vb: RailSharp.Result(Of TFailure, TSuccess).Widening
+  nameWithType: Result<TFailure, TSuccess>.Implicit
+  nameWithType.vb: Result(Of TFailure, TSuccess).Widening
+- uid: RailSharp.ResultExtensions
+  name: ResultExtensions
+  href: api/RailSharp.ResultExtensions.html
+  commentId: T:RailSharp.ResultExtensions
+  fullName: RailSharp.ResultExtensions
+  nameWithType: ResultExtensions
+- uid: RailSharp.ResultExtensions.Catch*
+  name: Catch
+  href: api/RailSharp.ResultExtensions.html#RailSharp_ResultExtensions_Catch_
+  commentId: Overload:RailSharp.ResultExtensions.Catch
+  isSpec: "True"
+  fullName: RailSharp.ResultExtensions.Catch
+  nameWithType: ResultExtensions.Catch
+- uid: RailSharp.ResultExtensions.Catch``2(RailSharp.Result{``0,``1},Func{``0,``1})
+  name: Catch<TFailure, TSuccess>(Result<TFailure, TSuccess>, Func<TFailure, TSuccess>)
+  href: api/RailSharp.ResultExtensions.html#RailSharp_ResultExtensions_Catch__2_RailSharp_Result___0___1__Func___0___1__
+  commentId: M:RailSharp.ResultExtensions.Catch``2(RailSharp.Result{``0,``1},Func{``0,``1})
+  name.vb: Catch(Of TFailure, TSuccess)(Result(Of TFailure, TSuccess), Func(Of TFailure, TSuccess))
+  fullName: RailSharp.ResultExtensions.Catch<TFailure, TSuccess>(RailSharp.Result<TFailure, TSuccess>, Func<TFailure, TSuccess>)
+  fullName.vb: RailSharp.ResultExtensions.Catch(Of TFailure, TSuccess)(RailSharp.Result(Of TFailure, TSuccess), Func(Of TFailure, TSuccess))
+  nameWithType: ResultExtensions.Catch<TFailure, TSuccess>(Result<TFailure, TSuccess>, Func<TFailure, TSuccess>)
+  nameWithType.vb: ResultExtensions.Catch(Of TFailure, TSuccess)(Result(Of TFailure, TSuccess), Func(Of TFailure, TSuccess))
+- uid: RailSharp.ResultExtensions.Catch``2(RailSharp.Result{``0,``1},Func{``0,System.Boolean},Func{``0,``1})
+  name: Catch<TFailure, TSuccess>(Result<TFailure, TSuccess>, Func<TFailure, Boolean>, Func<TFailure, TSuccess>)
+  href: api/RailSharp.ResultExtensions.html#RailSharp_ResultExtensions_Catch__2_RailSharp_Result___0___1__Func___0_System_Boolean__Func___0___1__
+  commentId: M:RailSharp.ResultExtensions.Catch``2(RailSharp.Result{``0,``1},Func{``0,System.Boolean},Func{``0,``1})
+  name.vb: Catch(Of TFailure, TSuccess)(Result(Of TFailure, TSuccess), Func(Of TFailure, Boolean), Func(Of TFailure, TSuccess))
+  fullName: RailSharp.ResultExtensions.Catch<TFailure, TSuccess>(RailSharp.Result<TFailure, TSuccess>, Func<TFailure, System.Boolean>, Func<TFailure, TSuccess>)
+  fullName.vb: RailSharp.ResultExtensions.Catch(Of TFailure, TSuccess)(RailSharp.Result(Of TFailure, TSuccess), Func(Of TFailure, System.Boolean), Func(Of TFailure, TSuccess))
+  nameWithType: ResultExtensions.Catch<TFailure, TSuccess>(Result<TFailure, TSuccess>, Func<TFailure, Boolean>, Func<TFailure, TSuccess>)
+  nameWithType.vb: ResultExtensions.Catch(Of TFailure, TSuccess)(Result(Of TFailure, TSuccess), Func(Of TFailure, Boolean), Func(Of TFailure, TSuccess))
+- uid: RailSharp.ResultExtensions.Map*
+  name: Map
+  href: api/RailSharp.ResultExtensions.html#RailSharp_ResultExtensions_Map_
+  commentId: Overload:RailSharp.ResultExtensions.Map
+  isSpec: "True"
+  fullName: RailSharp.ResultExtensions.Map
+  nameWithType: ResultExtensions.Map
+- uid: RailSharp.ResultExtensions.Map``2(RailSharp.Result{``0},Func{``1})
+  name: Map<TFailure, TSuccess>(Result<TFailure>, Func<TSuccess>)
+  href: api/RailSharp.ResultExtensions.html#RailSharp_ResultExtensions_Map__2_RailSharp_Result___0__Func___1__
+  commentId: M:RailSharp.ResultExtensions.Map``2(RailSharp.Result{``0},Func{``1})
+  name.vb: Map(Of TFailure, TSuccess)(Result(Of TFailure), Func(Of TSuccess))
+  fullName: RailSharp.ResultExtensions.Map<TFailure, TSuccess>(RailSharp.Result<TFailure>, Func<TSuccess>)
+  fullName.vb: RailSharp.ResultExtensions.Map(Of TFailure, TSuccess)(RailSharp.Result(Of TFailure), Func(Of TSuccess))
+  nameWithType: ResultExtensions.Map<TFailure, TSuccess>(Result<TFailure>, Func<TSuccess>)
+  nameWithType.vb: ResultExtensions.Map(Of TFailure, TSuccess)(Result(Of TFailure), Func(Of TSuccess))
+- uid: RailSharp.ResultExtensions.Map``3(RailSharp.Result{``0,``1},Func{``1,``2})
+  name: Map<TFailure, TSuccess, TNewSuccess>(Result<TFailure, TSuccess>, Func<TSuccess, TNewSuccess>)
+  href: api/RailSharp.ResultExtensions.html#RailSharp_ResultExtensions_Map__3_RailSharp_Result___0___1__Func___1___2__
+  commentId: M:RailSharp.ResultExtensions.Map``3(RailSharp.Result{``0,``1},Func{``1,``2})
+  name.vb: Map(Of TFailure, TSuccess, TNewSuccess)(Result(Of TFailure, TSuccess), Func(Of TSuccess, TNewSuccess))
+  fullName: RailSharp.ResultExtensions.Map<TFailure, TSuccess, TNewSuccess>(RailSharp.Result<TFailure, TSuccess>, Func<TSuccess, TNewSuccess>)
+  fullName.vb: RailSharp.ResultExtensions.Map(Of TFailure, TSuccess, TNewSuccess)(RailSharp.Result(Of TFailure, TSuccess), Func(Of TSuccess, TNewSuccess))
+  nameWithType: ResultExtensions.Map<TFailure, TSuccess, TNewSuccess>(Result<TFailure, TSuccess>, Func<TSuccess, TNewSuccess>)
+  nameWithType.vb: ResultExtensions.Map(Of TFailure, TSuccess, TNewSuccess)(Result(Of TFailure, TSuccess), Func(Of TSuccess, TNewSuccess))
+- uid: RailSharp.ResultExtensions.ThrowIfFailure*
+  name: ThrowIfFailure
+  href: api/RailSharp.ResultExtensions.html#RailSharp_ResultExtensions_ThrowIfFailure_
+  commentId: Overload:RailSharp.ResultExtensions.ThrowIfFailure
+  isSpec: "True"
+  fullName: RailSharp.ResultExtensions.ThrowIfFailure
+  nameWithType: ResultExtensions.ThrowIfFailure
+- uid: RailSharp.ResultExtensions.ThrowIfFailure``2(RailSharp.Result{``0,``1})
+  name: ThrowIfFailure<TFailure, TSuccess>(Result<TFailure, TSuccess>)
+  href: api/RailSharp.ResultExtensions.html#RailSharp_ResultExtensions_ThrowIfFailure__2_RailSharp_Result___0___1__
+  commentId: M:RailSharp.ResultExtensions.ThrowIfFailure``2(RailSharp.Result{``0,``1})
+  name.vb: ThrowIfFailure(Of TFailure, TSuccess)(Result(Of TFailure, TSuccess))
+  fullName: RailSharp.ResultExtensions.ThrowIfFailure<TFailure, TSuccess>(RailSharp.Result<TFailure, TSuccess>)
+  fullName.vb: RailSharp.ResultExtensions.ThrowIfFailure(Of TFailure, TSuccess)(RailSharp.Result(Of TFailure, TSuccess))
+  nameWithType: ResultExtensions.ThrowIfFailure<TFailure, TSuccess>(Result<TFailure, TSuccess>)
+  nameWithType.vb: ResultExtensions.ThrowIfFailure(Of TFailure, TSuccess)(Result(Of TFailure, TSuccess))
+- uid: RailSharp.ResultExtensions.ThrowIfFailure``2(RailSharp.Result{``0,``1},Func{``0,Exception})
+  name: ThrowIfFailure<TFailure, TSuccess>(Result<TFailure, TSuccess>, Func<TFailure, Exception>)
+  href: api/RailSharp.ResultExtensions.html#RailSharp_ResultExtensions_ThrowIfFailure__2_RailSharp_Result___0___1__Func___0_Exception__
+  commentId: M:RailSharp.ResultExtensions.ThrowIfFailure``2(RailSharp.Result{``0,``1},Func{``0,Exception})
+  name.vb: ThrowIfFailure(Of TFailure, TSuccess)(Result(Of TFailure, TSuccess), Func(Of TFailure, Exception))
+  fullName: RailSharp.ResultExtensions.ThrowIfFailure<TFailure, TSuccess>(RailSharp.Result<TFailure, TSuccess>, Func<TFailure, Exception>)
+  fullName.vb: RailSharp.ResultExtensions.ThrowIfFailure(Of TFailure, TSuccess)(RailSharp.Result(Of TFailure, TSuccess), Func(Of TFailure, Exception))
+  nameWithType: ResultExtensions.ThrowIfFailure<TFailure, TSuccess>(Result<TFailure, TSuccess>, Func<TFailure, Exception>)
+  nameWithType.vb: ResultExtensions.ThrowIfFailure(Of TFailure, TSuccess)(Result(Of TFailure, TSuccess), Func(Of TFailure, Exception))
