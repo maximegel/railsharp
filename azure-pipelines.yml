@@ -10,7 +10,7 @@ trigger:
       - README.md
 
 pool:
-  vmImage: windows-latest
+  vmImage: vs2017-win2016
 
 variables:
   configuration: Release
@@ -25,14 +25,14 @@ steps:
     displayName: Build
     inputs:
       command: build
-      projects: '**/*.csproj'
+      projects: 'src/**/*.csproj'
       configuration: $(configuration)
   
   - task: DotNetCoreCLI@2
     displayName: Test
     inputs:
       command: test
-      projects: '**/*Test*.csproj'
+      projects: 'src/**/*Test*.csproj'
       configuration: $(configuration)
       nobuild: true
       arguments: /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:Include="[$(System.TeamProject)*]*" /p:Exclude="[*Test*]*"
@@ -48,16 +48,37 @@ steps:
       codeCoverageTool: Cobertura
       summaryFileLocation: '$(Build.SourcesDirectory)/CodeCoverage/Cobertura.xml'
 
+  - task: Npm@1
+    displayName: Set up documentation CLI
+    inputs:
+      command: custom
+      customCommand: install --only=prod
+      workingDir: docs
+
+  - task: Npm@1
+    displayName: Build documentation
+    inputs:
+      command: custom
+      customCommand: run build
+      workingDir: docs
+
+  - task: PublishBuildArtifacts@1
+    displayName: Publish documentation artifact
+    inputs:
+      pathToPublish: docs/_site
+      ArtifactName: docs
+
   - task: DotNetCoreCLI@2
-    displayName: Pack
+    displayName: Pack NuGet packages
     inputs:
       command: pack
       packDirectory: '$(Build.ArtifactStagingDirectory)'
-      workingDirectory: '$(Join-Path -Path Build.SourcesDirectory -ChildPath "src")'
       configuration: $(configuration)
       nobuild: true
+      workingDirectory: src
  
   - task: PublishBuildArtifacts@1
-    displayName: Publish build artifacts
+    displayName: Publish NuGet packages artifact
     inputs:
-      pathtoPublish: '$(Build.ArtifactStagingDirectory)'
+      pathToPublish: '$(Build.ArtifactStagingDirectory)'
+      ArtifactName: nupkgs

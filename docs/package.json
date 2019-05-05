@@ -1,0 +1,20 @@
+{
+  "name": "docs-cli",
+  "description": "Documentation CLI",
+  "scripts": {
+    "install": "napa steffen-wilke/darkfx",
+    "start": "npm run build && npm run serve",
+    "clean": "git add * && git clean -xdf --exclude node_modules/ && git reset HEAD -- .",
+    "build": "shx cp ../README.md ./index.md && dotnet build",
+    "rebuild": "npm run clean && npm run build",
+    "serve": "cd ./_site && lite-server"
+  },
+  "dependencies": {
+    "napa": "^3.0.0",
+    "shx": "^0.3.2"
+  },
+  "devDependencies": {
+    "lite-server": "^2.4.0"
+  },
+  "private": true
+}
