@@ -14,8 +14,7 @@ namespace RailSharp
         /// <returns>The initial result.</returns>
         public static Option<T> Do<T>(this Option<T> option, Action<T> action)
         {
-            if (option is Some<T> some)
-                action(some);
+            if (option is Some<T> some) action(some);
             return option;
         }
 
@@ -37,8 +36,7 @@ namespace RailSharp
         /// <param name="option">The initial option.</param>
         /// <param name="defaultValue">The default value to return when <paramref name="option" /> is empty.</param>
         /// <returns>The optional value or a default value.</returns>
-        public static T Reduce<T>(this Option<T> option, T defaultValue) =>
-            Reduce(option, () => defaultValue);
+        public static T Reduce<T>(this Option<T> option, T defaultValue) => Reduce(option, () => defaultValue);
 
         /// <summary>
         ///     Returns the contained value if <paramref name="option" /> contains a value or a default value if not.

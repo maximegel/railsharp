@@ -20,8 +20,7 @@ namespace RailSharp
         /// <typeparam name="T">The type of the optional value.</typeparam>
         /// <param name="value">The value that will be contained by the option.</param>
         /// <returns>The created option.</returns>
-        public static Option<T> From<T>(T value) =>
-            value == null ? None : Some(value);
+        public static Option<T> From<T>(T value) => value == null ? None : Some(value);
 
         /// <summary>
         ///     Creates an option containing a value; if <paramref name="value" /> is null, throws

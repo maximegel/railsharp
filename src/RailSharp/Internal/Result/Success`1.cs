@@ -4,10 +4,8 @@
     {
         private readonly TSuccess _content;
 
-        public Success(TSuccess content) =>
-            _content = content;
+        public Success(TSuccess content) => _content = content;
 
-        public static implicit operator TSuccess(Success<TSuccess> success) =>
-            success._content;
+        public static implicit operator TSuccess(Success<TSuccess> success) => success._content;
     }
 }

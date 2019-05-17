@@ -4,10 +4,8 @@
     {
         private readonly T _content;
 
-        public Some(T content) =>
-            _content = content;
+        public Some(T content) => _content = content;
 
-        public static implicit operator T(Some<T> value) =>
-            value._content;
+        public static implicit operator T(Some<T> value) => value._content;
     }
 }

@@ -28,8 +28,7 @@ namespace RailSharp
         ///     An empty option if <paramref name="sequence" /> is empty or an option containing the first element in
         ///     <paramref name="sequence" />.
         /// </returns>
-        public static Option<T> TryFirst<T>(this IEnumerable<T> sequence) =>
-            TryFirst(sequence, _ => true);
+        public static Option<T> TryFirst<T>(this IEnumerable<T> sequence) => TryFirst(sequence, _ => true);
 
         /// <summary>
         ///     Returns an option containing the first element of the sequence that satisfies a condition or an empty option if no
@@ -50,9 +49,7 @@ namespace RailSharp
         /// </remarks>
         public static Option<T> TryFirst<T>(this IEnumerable<T> sequence, Func<T, bool> predicate)
         {
-            foreach (var element in sequence.Where(predicate))
-                return element;
-
+            foreach (var element in sequence.Where(predicate)) return element;
             return Option.None;
         }
 
@@ -81,8 +78,7 @@ namespace RailSharp
         ///     An empty option if <paramref name="sequence" /> is empty or an option containing the only element in
         ///     <paramref name="sequence" />.
         /// </returns>
-        public static Option<T> TrySingle<T>(this IEnumerable<T> sequence) =>
-            TrySingle(sequence, _ => true);
+        public static Option<T> TrySingle<T>(this IEnumerable<T> sequence) => TrySingle(sequence, _ => true);
 
         /// <summary>
         ///     Returns an option containing the only element of the sequence that satisfies a condition or an empty option if no

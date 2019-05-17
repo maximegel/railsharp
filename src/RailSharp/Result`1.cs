@@ -12,14 +12,12 @@ namespace RailSharp
         ///     Implicitly casts a value of any type to a generic result failure of the given <paramref name="value" /> type.
         /// </summary>
         /// <param name="value">The failure to cast.</param>
-        public static implicit operator Result<TFailure>(TFailure value) =>
-            new Failure<TFailure>(value);
+        public static implicit operator Result<TFailure>(TFailure value) => new Failure<TFailure>(value);
 
         /// <summary>
         ///     Implicitly casts an empty success to a generic result of the desired failure type.
         /// </summary>
         /// <param name="success">The success to cast.</param>
-        public static implicit operator Result<TFailure>(VoidSuccess success) =>
-            new VoidSuccess<TFailure>();
+        public static implicit operator Result<TFailure>(VoidSuccess success) => new VoidSuccess<TFailure>();
     }
 }

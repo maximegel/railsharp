@@ -26,7 +26,7 @@ namespace RailSharp.Tests
         [Fact]
         public static void ImplicitNoneOperator_ReturnsNoneAsOption()
         {
-            var option = (Option<string>)Option.None;
+            var option = (Option<string>) Option.None;
 
             option.Should().BeAssignableTo<None<string>>();
         }
@@ -34,7 +34,7 @@ namespace RailSharp.Tests
         [Fact]
         public static void ImplicitTOperator_WithNonNull_ReturnsSomeAsOption()
         {
-             var option = (Option<string>)"foo";
+            var option = (Option<string>) "foo";
 
             option.Should().BeOfType<Some<string>>();
         }
@@ -42,9 +42,9 @@ namespace RailSharp.Tests
         [Fact]
         public static void ImplicitTOperator_WithNull_ReturnsNoneAsOption()
         {
-            string @null = null; 
+            string @null = null;
             // ReSharper disable once ExpressionIsAlwaysNull
-            var option = (Option<string>)@null;
+            var option = (Option<string>) @null;
 
             option.Should().BeOfType<None<string>>();
         }

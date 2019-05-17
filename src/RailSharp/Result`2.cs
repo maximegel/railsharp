@@ -30,7 +30,7 @@ namespace RailSharp
         /// <param name="success"></param>
         public static implicit operator Result<TFailure, TSuccess>(TSuccess success) =>
             new Success<TFailure, TSuccess>(success);
-        
+
         /// <summary>
         ///     Implicitly casts a success to a result.
         /// </summary>
