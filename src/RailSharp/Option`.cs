@@ -16,16 +16,16 @@ namespace RailSharp
             new None<T>();
 
         /// <summary>
-        ///     Implicitly casts a value of any type into an option containing <paramref name="value" />.
+        ///     Implicitly casts a value of any type to an option containing <paramref name="value" />.
         /// </summary>
-        /// <param name="value"></param>
+        /// <param name="value">The value to cast.</param>
         public static implicit operator Option<T>(T value) =>
             From(value);
 
         /// <summary>
-        ///     Implicitly casts an empty option into a generic option of the desired type.
+        ///     Implicitly casts an empty option to a generic option of the desired type.
         /// </summary>
-        /// <param name="none"></param>
+        /// <param name="none">The value to cast.</param>
         public static implicit operator Option<T>(None none) =>
             new None<T>();
     }

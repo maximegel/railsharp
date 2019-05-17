@@ -30,16 +30,19 @@
                         <a href="https://www.nuget.org/packages/RailSharp">
                             <img alt="Nuget" src="https://img.shields.io/nuget/v/railsharp.svg?style=flat-square">
                         </a>
+                        <a href="https://www.nuget.org/packages/RailSharp">
+                            <img alt="Nuget downloads" src="https://img.shields.io/nuget/dt/railsharp.svg?style=flat-square">
+                        </a>
                         <a href="https://github.com/softframe/railsharp/blob/master/LICENSE">
                             <img alt="License" src="https://img.shields.io/github/license/softframe/railsharp.svg?style=flat-square">
                         </a>
                     </p>
-                    <!-- <p align="center">
+                    <p align="center">
                         <b>Quick links:</b>
-                        <span><a href="https://softframe.github.io/railsharp/articles/getting-started.html">Getting Started</a>,</span>
+                        <!-- <span><a href="https://softframe.github.io/railsharp/articles/getting-started.html">Getting Started</a>,</span> -->
                         <span class="hidden"><a href="https://softframe.github.io/railsharp">Docs</a>,</span>
-                        <span><a href="https://softframe.github.io/railsharp/api/railsharp.html">API</a></span>
-                    </p> -->
+                        <span><a href="https://softframe.github.io/railsharp/api/RailSharp.html">API</a></span>
+                    </p>
                 </div>
             </div>
         </div>
@@ -53,7 +56,41 @@ RailSharp uses railway oriented programming to help handle errors and to deal wi
 
 To learn more about railway oriented programming, take a look [here](https://fsharpforfunandprofit.com/rop/)!
 
-<!-- # How do I get started? -->
+# How do I get started?
+
+Here's a quick overview of how to use the Option and Result types:
+
+**Option type:**
+
+```csharp
+// First, instantiates an option using `Option.None`, `Option.Some(T)` 
+// or one of the extension methods.
+var option = Option.Some(new User("Alan Turing"));
+
+var userName = option
+    // Then, handle the happy path (i.e. when the option contains a value).
+    .Map(user => user.Name)
+    .Do(name => SayHi(name))
+    // Finally, handle the sad path (i.e. when the option contains no value).
+    .Reduce(() => "Anonymous")
+```
+
+**Result type:**
+
+```csharp
+// First, instantiates a result using `Result.Failure(TFailure)`,
+// `Result.Success(TSuccess)` or one of the extension methods.
+var result = Result.Failure(new UserNotFound());
+
+var httpResponse = result
+    // Then, handle the happy path (i.e. when the result is a success).
+    .Map(data => Ok(data))
+    // Finally, handle the sad paths (i.e. when the result is a failure).
+    .Catch<UserNotFound>(err => NotFound())
+    .Catch(err => InternalServerError())
+```
+
+You can also take a look at the [API documentation][api-doc-url] or even the [unit tests][unit-tests-url] for a deeper understanding.
 
 # How do I install it?
 
@@ -80,9 +117,11 @@ The original code has been inspired from the Pluralsight course [Making Your C# 
 RailSharp is Copyright © 2018 SoftFrame under the [MIT license][license-url].
 
 <!-- Resources: -->
+[api-doc-url]: https://softframe.github.io/railsharp/api/RailSharp.html
 [develop-branch-url]: https://github.com/softframe/railsharp/tree/develop
 [issues-url]: https://github.com/softframe/solidstack/issues
 [license-url]: https://github.com/softframe/railsharp/blob/master/LICENSE
 [new-issue-url]: https://github.com/softframe/solidstack/issues/new
 [nuget-pkg-url]: https://www.nuget.org/packages/RailSharp
 [nuget-install-url]: http://docs.nuget.org/docs/start-here/installing-nuget
+[unit-tests-url]: https://github.com/softframe/railsharp/tree/develop/src/RailSharp.Tests

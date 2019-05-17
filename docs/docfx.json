@@ -33,7 +33,8 @@
         "files": [
           "articles/**.md",
           "articles/**/toc.yml",
-          "index.md"
+          "index.md",
+          "toc.yml"
         ]
       }
     ],
@@ -61,13 +62,9 @@
       "_appLogoPath": "assets/favicons/favicon.png",
       "_appFaviconPath": "assets/favicons/favicon.ico",
       "_enableSearch": true,
-      "_enableNewTab": true,
-      "_disableNavbar": false
+      "_enableNewTab": true
     },
     "fileMetadata": {
-      "_disableToc": {
-        "index.md": false
-      },
       "_disableAffix": {
         "index.md": true
       }
