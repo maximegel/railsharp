@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="../styles/docfx.css">
     <link rel="stylesheet" href="../styles/main.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-    <meta property="docfx:navrel" content="">
+    <meta property="docfx:navrel" content="../toc.html">
     <meta property="docfx:tocrel" content="toc.html">
     
     <meta property="docfx:rel" content="../">
@@ -90,24 +90,49 @@
     <div class="level0"><span class="xref">System.Object</span></div>
     <div class="level1"><span class="xref">OptionExtensions</span></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="RailSharp.html">RailSharp</a></h6>
   <h6><strong>Assembly</strong>: RailSharp.dll</h6>
   <h5 id="RailSharp_OptionExtensions_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class OptionExtensions : object</code></pre>
+    <pre><code class="lang-csharp hljs">public static class OptionExtensions</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/softframe/railsharp/new/feature/xml-doc/apiSpec/new?filename=RailSharp_OptionExtensions_Do__1_RailSharp_Option___0__Action___0__.md&amp;value=---%0Auid%3A%20RailSharp.OptionExtensions.Do%60%601(RailSharp.Option%7B%60%600%7D%2CAction%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/softframe/railsharp/new/develop/apiSpec/new?filename=RailSharp_OptionExtensions_Do__1_RailSharp_Option___0__System_Action___0__.md&amp;value=---%0Auid%3A%20RailSharp.OptionExtensions.Do%60%601(RailSharp.Option%7B%60%600%7D%2CSystem.Action%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/softframe/railsharp/blob/feature/xml-doc/src/RailSharp/OptionExtensions.cs/#L8">View Source</a>
+    <a href="https://github.com/softframe/railsharp/blob/develop/src/RailSharp/OptionExtensions.cs/#L15">View Source</a>
   </span>
   <a id="RailSharp_OptionExtensions_Do_" data-uid="RailSharp.OptionExtensions.Do*"></a>
-  <h4 id="RailSharp_OptionExtensions_Do__1_RailSharp_Option___0__Action___0__" data-uid="RailSharp.OptionExtensions.Do``1(RailSharp.Option{``0},Action{``0})">Do&lt;T&gt;(Option&lt;T&gt;, Action&lt;T&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="RailSharp_OptionExtensions_Do__1_RailSharp_Option___0__System_Action___0__" data-uid="RailSharp.OptionExtensions.Do``1(RailSharp.Option{``0},System.Action{``0})">Do&lt;T&gt;(Option&lt;T&gt;, Action&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Execute an <code data-dev-comment-type="paramref" class="paramref">action</code> on the contained value only if <code data-dev-comment-type="paramref" class="paramref">option</code> contains a value.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -126,12 +151,14 @@
       <tr>
         <td><a class="xref" href="RailSharp.Option-1.html">Option</a>&lt;T&gt;</td>
         <td><span class="parametername">option</span></td>
-        <td></td>
+        <td><p>The option to execute an <code data-dev-comment-type="paramref" class="paramref">action</code> on.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">Action</span>&lt;T&gt;</td>
+        <td><span class="xref">System.Action</span>&lt;T&gt;</td>
         <td><span class="parametername">action</span></td>
-        <td></td>
+        <td><p>A action function to execute.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -146,7 +173,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="RailSharp.Option-1.html">Option</a>&lt;T&gt;</td>
-        <td></td>
+        <td><p>The initial result.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -161,24 +189,26 @@
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>The type of the optional value.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/softframe/railsharp/new/feature/xml-doc/apiSpec/new?filename=RailSharp_OptionExtensions_Map__2_RailSharp_Option___0__Func___0___1__.md&amp;value=---%0Auid%3A%20RailSharp.OptionExtensions.Map%60%602(RailSharp.Option%7B%60%600%7D%2CFunc%7B%60%600%2C%60%601%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/softframe/railsharp/new/develop/apiSpec/new?filename=RailSharp_OptionExtensions_Map__2_RailSharp_Option___0__System_Func___0___1__.md&amp;value=---%0Auid%3A%20RailSharp.OptionExtensions.Map%60%602(RailSharp.Option%7B%60%600%7D%2CSystem.Func%7B%60%600%2C%60%601%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/softframe/railsharp/blob/feature/xml-doc/src/RailSharp/OptionExtensions.cs/#L15">View Source</a>
+    <a href="https://github.com/softframe/railsharp/blob/develop/src/RailSharp/OptionExtensions.cs/#L30">View Source</a>
   </span>
   <a id="RailSharp_OptionExtensions_Map_" data-uid="RailSharp.OptionExtensions.Map*"></a>
-  <h4 id="RailSharp_OptionExtensions_Map__2_RailSharp_Option___0__Func___0___1__" data-uid="RailSharp.OptionExtensions.Map``2(RailSharp.Option{``0},Func{``0,``1})">Map&lt;T, TResult&gt;(Option&lt;T&gt;, Func&lt;T, TResult&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="RailSharp_OptionExtensions_Map__2_RailSharp_Option___0__System_Func___0___1__" data-uid="RailSharp.OptionExtensions.Map``2(RailSharp.Option{``0},System.Func{``0,``1})">Map&lt;T, TDestination&gt;(Option&lt;T&gt;, Func&lt;T, TDestination&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns a new option containing a mapped value if <code data-dev-comment-type="paramref" class="paramref">option</code> contains a value or none if not.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static Option&lt;TResult&gt; Map&lt;T, TResult&gt;(this Option&lt;T&gt; option, Func&lt;T, TResult&gt; mapper)</code></pre>
+    <pre><code class="lang-csharp hljs">public static Option&lt;TDestination&gt; Map&lt;T, TDestination&gt;(this Option&lt;T&gt; option, Func&lt;T, TDestination&gt; mapper)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -193,12 +223,14 @@
       <tr>
         <td><a class="xref" href="RailSharp.Option-1.html">Option</a>&lt;T&gt;</td>
         <td><span class="parametername">option</span></td>
-        <td></td>
+        <td><p>The initial option.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">Func</span>&lt;T, TResult&gt;</td>
+        <td><span class="xref">System.Func</span>&lt;T, TDestination&gt;</td>
         <td><span class="parametername">mapper</span></td>
-        <td></td>
+        <td><p>A function to map the optional value to a new value.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -212,8 +244,9 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="RailSharp.Option-1.html">Option</a>&lt;TResult&gt;</td>
-        <td></td>
+        <td><a class="xref" href="RailSharp.Option-1.html">Option</a>&lt;TDestination&gt;</td>
+        <td><p>A new option containing the mapped value or none.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -228,24 +261,27 @@
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>The source type of the optional value.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="parametername">TResult</span></td>
-        <td></td>
+        <td><span class="parametername">TDestination</span></td>
+        <td><p>The destination type of the optional value.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/softframe/railsharp/new/feature/xml-doc/apiSpec/new?filename=RailSharp_OptionExtensions_Reduce__1_RailSharp_Option___0____0_.md&amp;value=---%0Auid%3A%20RailSharp.OptionExtensions.Reduce%60%601(RailSharp.Option%7B%60%600%7D%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/softframe/railsharp/new/develop/apiSpec/new?filename=RailSharp_OptionExtensions_Reduce__1_RailSharp_Option___0____0_.md&amp;value=---%0Auid%3A%20RailSharp.OptionExtensions.Reduce%60%601(RailSharp.Option%7B%60%600%7D%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/softframe/railsharp/blob/feature/xml-doc/src/RailSharp/OptionExtensions.cs/#L18">View Source</a>
+    <a href="https://github.com/softframe/railsharp/blob/develop/src/RailSharp/OptionExtensions.cs/#L40">View Source</a>
   </span>
   <a id="RailSharp_OptionExtensions_Reduce_" data-uid="RailSharp.OptionExtensions.Reduce*"></a>
   <h4 id="RailSharp_OptionExtensions_Reduce__1_RailSharp_Option___0____0_" data-uid="RailSharp.OptionExtensions.Reduce``1(RailSharp.Option{``0},``0)">Reduce&lt;T&gt;(Option&lt;T&gt;, T)</h4>
-  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 summary"><p>Returns the contained value if <code data-dev-comment-type="paramref" class="paramref">option</code> contains a value or a default value if not.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -264,12 +300,14 @@
       <tr>
         <td><a class="xref" href="RailSharp.Option-1.html">Option</a>&lt;T&gt;</td>
         <td><span class="parametername">option</span></td>
-        <td></td>
+        <td><p>The initial option.</p>
+</td>
       </tr>
       <tr>
         <td><span class="xref">T</span></td>
         <td><span class="parametername">defaultValue</span></td>
-        <td></td>
+        <td><p>The default value to return when <code data-dev-comment-type="paramref" class="paramref">option</code> is empty.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -284,7 +322,8 @@
     <tbody>
       <tr>
         <td><span class="xref">T</span></td>
-        <td></td>
+        <td><p>The optional value or a default value.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -299,20 +338,22 @@
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>The type of the optional value.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/softframe/railsharp/new/feature/xml-doc/apiSpec/new?filename=RailSharp_OptionExtensions_Reduce__1_RailSharp_Option___0__Func___0__.md&amp;value=---%0Auid%3A%20RailSharp.OptionExtensions.Reduce%60%601(RailSharp.Option%7B%60%600%7D%2CFunc%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/softframe/railsharp/new/develop/apiSpec/new?filename=RailSharp_OptionExtensions_Reduce__1_RailSharp_Option___0__System_Func___0__.md&amp;value=---%0Auid%3A%20RailSharp.OptionExtensions.Reduce%60%601(RailSharp.Option%7B%60%600%7D%2CSystem.Func%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/softframe/railsharp/blob/feature/xml-doc/src/RailSharp/OptionExtensions.cs/#L21">View Source</a>
+    <a href="https://github.com/softframe/railsharp/blob/develop/src/RailSharp/OptionExtensions.cs/#L50">View Source</a>
   </span>
   <a id="RailSharp_OptionExtensions_Reduce_" data-uid="RailSharp.OptionExtensions.Reduce*"></a>
-  <h4 id="RailSharp_OptionExtensions_Reduce__1_RailSharp_Option___0__Func___0__" data-uid="RailSharp.OptionExtensions.Reduce``1(RailSharp.Option{``0},Func{``0})">Reduce&lt;T&gt;(Option&lt;T&gt;, Func&lt;T&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="RailSharp_OptionExtensions_Reduce__1_RailSharp_Option___0__System_Func___0__" data-uid="RailSharp.OptionExtensions.Reduce``1(RailSharp.Option{``0},System.Func{``0})">Reduce&lt;T&gt;(Option&lt;T&gt;, Func&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns the contained value if <code data-dev-comment-type="paramref" class="paramref">option</code> contains a value or a default value if not.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -331,12 +372,14 @@
       <tr>
         <td><a class="xref" href="RailSharp.Option-1.html">Option</a>&lt;T&gt;</td>
         <td><span class="parametername">option</span></td>
-        <td></td>
+        <td><p>The initial option.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">Func</span>&lt;T&gt;</td>
+        <td><span class="xref">System.Func</span>&lt;T&gt;</td>
         <td><span class="parametername">defaultValueFactory</span></td>
-        <td></td>
+        <td><p>A function to create the default value.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -351,7 +394,8 @@
     <tbody>
       <tr>
         <td><span class="xref">T</span></td>
-        <td></td>
+        <td><p>The optional value or a default value.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -366,20 +410,22 @@
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>The type of the optional value.</p>
+</td>
       </tr>
     </tbody>
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/softframe/railsharp/new/feature/xml-doc/apiSpec/new?filename=RailSharp_OptionExtensions_When__1_RailSharp_Option___0__Func___0_System_Boolean__.md&amp;value=---%0Auid%3A%20RailSharp.OptionExtensions.When%60%601(RailSharp.Option%7B%60%600%7D%2CFunc%7B%60%600%2CSystem.Boolean%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/softframe/railsharp/new/develop/apiSpec/new?filename=RailSharp_OptionExtensions_When__1_RailSharp_Option___0__System_Func___0_System_Boolean__.md&amp;value=---%0Auid%3A%20RailSharp.OptionExtensions.When%60%601(RailSharp.Option%7B%60%600%7D%2CSystem.Func%7B%60%600%2CSystem.Boolean%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/softframe/railsharp/blob/feature/xml-doc/src/RailSharp/OptionExtensions.cs/#L24">View Source</a>
+    <a href="https://github.com/softframe/railsharp/blob/develop/src/RailSharp/OptionExtensions.cs/#L60">View Source</a>
   </span>
   <a id="RailSharp_OptionExtensions_When_" data-uid="RailSharp.OptionExtensions.When*"></a>
-  <h4 id="RailSharp_OptionExtensions_When__1_RailSharp_Option___0__Func___0_System_Boolean__" data-uid="RailSharp.OptionExtensions.When``1(RailSharp.Option{``0},Func{``0,System.Boolean})">When&lt;T&gt;(Option&lt;T&gt;, Func&lt;T, Boolean&gt;)</h4>
-  <div class="markdown level1 summary"></div>
+  <h4 id="RailSharp_OptionExtensions_When__1_RailSharp_Option___0__System_Func___0_System_Boolean__" data-uid="RailSharp.OptionExtensions.When``1(RailSharp.Option{``0},System.Func{``0,System.Boolean})">When&lt;T&gt;(Option&lt;T&gt;, Func&lt;T, Boolean&gt;)</h4>
+  <div class="markdown level1 summary"><p>Returns none if <code data-dev-comment-type="paramref" class="paramref">option</code> doesn&apos;t satisfy the given condition.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -398,12 +444,14 @@
       <tr>
         <td><a class="xref" href="RailSharp.Option-1.html">Option</a>&lt;T&gt;</td>
         <td><span class="parametername">option</span></td>
-        <td></td>
+        <td><p>The initial option.</p>
+</td>
       </tr>
       <tr>
-        <td><span class="xref">Func</span>&lt;T, <span class="xref">System.Boolean</span>&gt;</td>
+        <td><span class="xref">System.Func</span>&lt;T, <span class="xref">System.Boolean</span>&gt;</td>
         <td><span class="parametername">predicate</span></td>
-        <td></td>
+        <td><p>A function to test the optional value.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -418,7 +466,8 @@
     <tbody>
       <tr>
         <td><a class="xref" href="RailSharp.Option-1.html">Option</a>&lt;T&gt;</td>
-        <td></td>
+        <td><p>The initial option or none.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -433,7 +482,8 @@
     <tbody>
       <tr>
         <td><span class="parametername">T</span></td>
-        <td></td>
+        <td><p>The type of the optional value.</p>
+</td>
       </tr>
     </tbody>
   </table>
@@ -445,10 +495,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/softframe/railsharp/new/feature/xml-doc/apiSpec/new?filename=RailSharp_OptionExtensions.md&amp;value=---%0Auid%3A%20RailSharp.OptionExtensions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/softframe/railsharp/new/develop/apiSpec/new?filename=RailSharp_OptionExtensions.md&amp;value=---%0Auid%3A%20RailSharp.OptionExtensions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/softframe/railsharp/blob/feature/xml-doc/src/RailSharp/OptionExtensions.cs/#L6" class="contribution-link">View Source</a>
+                    <a href="https://github.com/softframe/railsharp/blob/develop/src/RailSharp/OptionExtensions.cs/#L6" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

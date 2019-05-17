@@ -125,13 +125,13 @@ references:
   isSpec: "True"
   fullName: RailSharp.OptionAdapters.Flatten
   nameWithType: OptionAdapters.Flatten
-- uid: RailSharp.OptionAdapters.Flatten``1(IEnumerable{RailSharp.Option{``0}})
+- uid: RailSharp.OptionAdapters.Flatten``1(System.Collections.Generic.IEnumerable{RailSharp.Option{``0}})
   name: Flatten<T>(IEnumerable<Option<T>>)
-  href: api/RailSharp.OptionAdapters.html#RailSharp_OptionAdapters_Flatten__1_IEnumerable_RailSharp_Option___0___
-  commentId: M:RailSharp.OptionAdapters.Flatten``1(IEnumerable{RailSharp.Option{``0}})
+  href: api/RailSharp.OptionAdapters.html#RailSharp_OptionAdapters_Flatten__1_System_Collections_Generic_IEnumerable_RailSharp_Option___0___
+  commentId: M:RailSharp.OptionAdapters.Flatten``1(System.Collections.Generic.IEnumerable{RailSharp.Option{``0}})
   name.vb: Flatten(Of T)(IEnumerable(Of Option(Of T)))
-  fullName: RailSharp.OptionAdapters.Flatten<T>(IEnumerable<RailSharp.Option<T>>)
-  fullName.vb: RailSharp.OptionAdapters.Flatten(Of T)(IEnumerable(Of RailSharp.Option(Of T)))
+  fullName: RailSharp.OptionAdapters.Flatten<T>(System.Collections.Generic.IEnumerable<RailSharp.Option<T>>)
+  fullName.vb: RailSharp.OptionAdapters.Flatten(Of T)(System.Collections.Generic.IEnumerable(Of RailSharp.Option(Of T)))
   nameWithType: OptionAdapters.Flatten<T>(IEnumerable<Option<T>>)
   nameWithType.vb: OptionAdapters.Flatten(Of T)(IEnumerable(Of Option(Of T)))
 - uid: RailSharp.OptionAdapters.TryFirst*
@@ -141,22 +141,22 @@ references:
   isSpec: "True"
   fullName: RailSharp.OptionAdapters.TryFirst
   nameWithType: OptionAdapters.TryFirst
-- uid: RailSharp.OptionAdapters.TryFirst``1(IEnumerable{``0})
+- uid: RailSharp.OptionAdapters.TryFirst``1(System.Collections.Generic.IEnumerable{``0})
   name: TryFirst<T>(IEnumerable<T>)
-  href: api/RailSharp.OptionAdapters.html#RailSharp_OptionAdapters_TryFirst__1_IEnumerable___0__
-  commentId: M:RailSharp.OptionAdapters.TryFirst``1(IEnumerable{``0})
+  href: api/RailSharp.OptionAdapters.html#RailSharp_OptionAdapters_TryFirst__1_System_Collections_Generic_IEnumerable___0__
+  commentId: M:RailSharp.OptionAdapters.TryFirst``1(System.Collections.Generic.IEnumerable{``0})
   name.vb: TryFirst(Of T)(IEnumerable(Of T))
-  fullName: RailSharp.OptionAdapters.TryFirst<T>(IEnumerable<T>)
-  fullName.vb: RailSharp.OptionAdapters.TryFirst(Of T)(IEnumerable(Of T))
+  fullName: RailSharp.OptionAdapters.TryFirst<T>(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: RailSharp.OptionAdapters.TryFirst(Of T)(System.Collections.Generic.IEnumerable(Of T))
   nameWithType: OptionAdapters.TryFirst<T>(IEnumerable<T>)
   nameWithType.vb: OptionAdapters.TryFirst(Of T)(IEnumerable(Of T))
-- uid: RailSharp.OptionAdapters.TryFirst``1(IEnumerable{``0},Func{``0,System.Boolean})
+- uid: RailSharp.OptionAdapters.TryFirst``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
   name: TryFirst<T>(IEnumerable<T>, Func<T, Boolean>)
-  href: api/RailSharp.OptionAdapters.html#RailSharp_OptionAdapters_TryFirst__1_IEnumerable___0__Func___0_System_Boolean__
-  commentId: M:RailSharp.OptionAdapters.TryFirst``1(IEnumerable{``0},Func{``0,System.Boolean})
+  href: api/RailSharp.OptionAdapters.html#RailSharp_OptionAdapters_TryFirst__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean__
+  commentId: M:RailSharp.OptionAdapters.TryFirst``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
   name.vb: TryFirst(Of T)(IEnumerable(Of T), Func(Of T, Boolean))
-  fullName: RailSharp.OptionAdapters.TryFirst<T>(IEnumerable<T>, Func<T, System.Boolean>)
-  fullName.vb: RailSharp.OptionAdapters.TryFirst(Of T)(IEnumerable(Of T), Func(Of T, System.Boolean))
+  fullName: RailSharp.OptionAdapters.TryFirst<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Boolean>)
+  fullName.vb: RailSharp.OptionAdapters.TryFirst(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Boolean))
   nameWithType: OptionAdapters.TryFirst<T>(IEnumerable<T>, Func<T, Boolean>)
   nameWithType.vb: OptionAdapters.TryFirst(Of T)(IEnumerable(Of T), Func(Of T, Boolean))
 - uid: RailSharp.OptionAdapters.TryGetValue*
@@ -166,13 +166,13 @@ references:
   isSpec: "True"
   fullName: RailSharp.OptionAdapters.TryGetValue
   nameWithType: OptionAdapters.TryGetValue
-- uid: RailSharp.OptionAdapters.TryGetValue``2(IDictionary{``0,``1},``0)
+- uid: RailSharp.OptionAdapters.TryGetValue``2(System.Collections.Generic.IDictionary{``0,``1},``0)
   name: TryGetValue<TKey, TValue>(IDictionary<TKey, TValue>, TKey)
-  href: api/RailSharp.OptionAdapters.html#RailSharp_OptionAdapters_TryGetValue__2_IDictionary___0___1____0_
-  commentId: M:RailSharp.OptionAdapters.TryGetValue``2(IDictionary{``0,``1},``0)
+  href: api/RailSharp.OptionAdapters.html#RailSharp_OptionAdapters_TryGetValue__2_System_Collections_Generic_IDictionary___0___1____0_
+  commentId: M:RailSharp.OptionAdapters.TryGetValue``2(System.Collections.Generic.IDictionary{``0,``1},``0)
   name.vb: TryGetValue(Of TKey, TValue)(IDictionary(Of TKey, TValue), TKey)
-  fullName: RailSharp.OptionAdapters.TryGetValue<TKey, TValue>(IDictionary<TKey, TValue>, TKey)
-  fullName.vb: RailSharp.OptionAdapters.TryGetValue(Of TKey, TValue)(IDictionary(Of TKey, TValue), TKey)
+  fullName: RailSharp.OptionAdapters.TryGetValue<TKey, TValue>(System.Collections.Generic.IDictionary<TKey, TValue>, TKey)
+  fullName.vb: RailSharp.OptionAdapters.TryGetValue(Of TKey, TValue)(System.Collections.Generic.IDictionary(Of TKey, TValue), TKey)
   nameWithType: OptionAdapters.TryGetValue<TKey, TValue>(IDictionary<TKey, TValue>, TKey)
   nameWithType.vb: OptionAdapters.TryGetValue(Of TKey, TValue)(IDictionary(Of TKey, TValue), TKey)
 - uid: RailSharp.OptionAdapters.TrySingle*
@@ -182,22 +182,22 @@ references:
   isSpec: "True"
   fullName: RailSharp.OptionAdapters.TrySingle
   nameWithType: OptionAdapters.TrySingle
-- uid: RailSharp.OptionAdapters.TrySingle``1(IEnumerable{``0})
+- uid: RailSharp.OptionAdapters.TrySingle``1(System.Collections.Generic.IEnumerable{``0})
   name: TrySingle<T>(IEnumerable<T>)
-  href: api/RailSharp.OptionAdapters.html#RailSharp_OptionAdapters_TrySingle__1_IEnumerable___0__
-  commentId: M:RailSharp.OptionAdapters.TrySingle``1(IEnumerable{``0})
+  href: api/RailSharp.OptionAdapters.html#RailSharp_OptionAdapters_TrySingle__1_System_Collections_Generic_IEnumerable___0__
+  commentId: M:RailSharp.OptionAdapters.TrySingle``1(System.Collections.Generic.IEnumerable{``0})
   name.vb: TrySingle(Of T)(IEnumerable(Of T))
-  fullName: RailSharp.OptionAdapters.TrySingle<T>(IEnumerable<T>)
-  fullName.vb: RailSharp.OptionAdapters.TrySingle(Of T)(IEnumerable(Of T))
+  fullName: RailSharp.OptionAdapters.TrySingle<T>(System.Collections.Generic.IEnumerable<T>)
+  fullName.vb: RailSharp.OptionAdapters.TrySingle(Of T)(System.Collections.Generic.IEnumerable(Of T))
   nameWithType: OptionAdapters.TrySingle<T>(IEnumerable<T>)
   nameWithType.vb: OptionAdapters.TrySingle(Of T)(IEnumerable(Of T))
-- uid: RailSharp.OptionAdapters.TrySingle``1(IEnumerable{``0},Func{``0,System.Boolean})
+- uid: RailSharp.OptionAdapters.TrySingle``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
   name: TrySingle<T>(IEnumerable<T>, Func<T, Boolean>)
-  href: api/RailSharp.OptionAdapters.html#RailSharp_OptionAdapters_TrySingle__1_IEnumerable___0__Func___0_System_Boolean__
-  commentId: M:RailSharp.OptionAdapters.TrySingle``1(IEnumerable{``0},Func{``0,System.Boolean})
+  href: api/RailSharp.OptionAdapters.html#RailSharp_OptionAdapters_TrySingle__1_System_Collections_Generic_IEnumerable___0__System_Func___0_System_Boolean__
+  commentId: M:RailSharp.OptionAdapters.TrySingle``1(System.Collections.Generic.IEnumerable{``0},System.Func{``0,System.Boolean})
   name.vb: TrySingle(Of T)(IEnumerable(Of T), Func(Of T, Boolean))
-  fullName: RailSharp.OptionAdapters.TrySingle<T>(IEnumerable<T>, Func<T, System.Boolean>)
-  fullName.vb: RailSharp.OptionAdapters.TrySingle(Of T)(IEnumerable(Of T), Func(Of T, System.Boolean))
+  fullName: RailSharp.OptionAdapters.TrySingle<T>(System.Collections.Generic.IEnumerable<T>, System.Func<T, System.Boolean>)
+  fullName.vb: RailSharp.OptionAdapters.TrySingle(Of T)(System.Collections.Generic.IEnumerable(Of T), System.Func(Of T, System.Boolean))
   nameWithType: OptionAdapters.TrySingle<T>(IEnumerable<T>, Func<T, Boolean>)
   nameWithType.vb: OptionAdapters.TrySingle(Of T)(IEnumerable(Of T), Func(Of T, Boolean))
 - uid: RailSharp.OptionAdapters.When*
@@ -207,13 +207,13 @@ references:
   isSpec: "True"
   fullName: RailSharp.OptionAdapters.When
   nameWithType: OptionAdapters.When
-- uid: RailSharp.OptionAdapters.When``1(``0,Func{``0,System.Boolean})
+- uid: RailSharp.OptionAdapters.When``1(``0,System.Func{``0,System.Boolean})
   name: When<T>(T, Func<T, Boolean>)
-  href: api/RailSharp.OptionAdapters.html#RailSharp_OptionAdapters_When__1___0_Func___0_System_Boolean__
-  commentId: M:RailSharp.OptionAdapters.When``1(``0,Func{``0,System.Boolean})
+  href: api/RailSharp.OptionAdapters.html#RailSharp_OptionAdapters_When__1___0_System_Func___0_System_Boolean__
+  commentId: M:RailSharp.OptionAdapters.When``1(``0,System.Func{``0,System.Boolean})
   name.vb: When(Of T)(T, Func(Of T, Boolean))
-  fullName: RailSharp.OptionAdapters.When<T>(T, Func<T, System.Boolean>)
-  fullName.vb: RailSharp.OptionAdapters.When(Of T)(T, Func(Of T, System.Boolean))
+  fullName: RailSharp.OptionAdapters.When<T>(T, System.Func<T, System.Boolean>)
+  fullName.vb: RailSharp.OptionAdapters.When(Of T)(T, System.Func(Of T, System.Boolean))
   nameWithType: OptionAdapters.When<T>(T, Func<T, Boolean>)
   nameWithType.vb: OptionAdapters.When(Of T)(T, Func(Of T, Boolean))
 - uid: RailSharp.OptionExtensions
@@ -229,13 +229,13 @@ references:
   isSpec: "True"
   fullName: RailSharp.OptionExtensions.Do
   nameWithType: OptionExtensions.Do
-- uid: RailSharp.OptionExtensions.Do``1(RailSharp.Option{``0},Action{``0})
+- uid: RailSharp.OptionExtensions.Do``1(RailSharp.Option{``0},System.Action{``0})
   name: Do<T>(Option<T>, Action<T>)
-  href: api/RailSharp.OptionExtensions.html#RailSharp_OptionExtensions_Do__1_RailSharp_Option___0__Action___0__
-  commentId: M:RailSharp.OptionExtensions.Do``1(RailSharp.Option{``0},Action{``0})
+  href: api/RailSharp.OptionExtensions.html#RailSharp_OptionExtensions_Do__1_RailSharp_Option___0__System_Action___0__
+  commentId: M:RailSharp.OptionExtensions.Do``1(RailSharp.Option{``0},System.Action{``0})
   name.vb: Do(Of T)(Option(Of T), Action(Of T))
-  fullName: RailSharp.OptionExtensions.Do<T>(RailSharp.Option<T>, Action<T>)
-  fullName.vb: RailSharp.OptionExtensions.Do(Of T)(RailSharp.Option(Of T), Action(Of T))
+  fullName: RailSharp.OptionExtensions.Do<T>(RailSharp.Option<T>, System.Action<T>)
+  fullName.vb: RailSharp.OptionExtensions.Do(Of T)(RailSharp.Option(Of T), System.Action(Of T))
   nameWithType: OptionExtensions.Do<T>(Option<T>, Action<T>)
   nameWithType.vb: OptionExtensions.Do(Of T)(Option(Of T), Action(Of T))
 - uid: RailSharp.OptionExtensions.Map*
@@ -245,15 +245,15 @@ references:
   isSpec: "True"
   fullName: RailSharp.OptionExtensions.Map
   nameWithType: OptionExtensions.Map
-- uid: RailSharp.OptionExtensions.Map``2(RailSharp.Option{``0},Func{``0,``1})
-  name: Map<T, TResult>(Option<T>, Func<T, TResult>)
-  href: api/RailSharp.OptionExtensions.html#RailSharp_OptionExtensions_Map__2_RailSharp_Option___0__Func___0___1__
-  commentId: M:RailSharp.OptionExtensions.Map``2(RailSharp.Option{``0},Func{``0,``1})
-  name.vb: Map(Of T, TResult)(Option(Of T), Func(Of T, TResult))
-  fullName: RailSharp.OptionExtensions.Map<T, TResult>(RailSharp.Option<T>, Func<T, TResult>)
-  fullName.vb: RailSharp.OptionExtensions.Map(Of T, TResult)(RailSharp.Option(Of T), Func(Of T, TResult))
-  nameWithType: OptionExtensions.Map<T, TResult>(Option<T>, Func<T, TResult>)
-  nameWithType.vb: OptionExtensions.Map(Of T, TResult)(Option(Of T), Func(Of T, TResult))
+- uid: RailSharp.OptionExtensions.Map``2(RailSharp.Option{``0},System.Func{``0,``1})
+  name: Map<T, TDestination>(Option<T>, Func<T, TDestination>)
+  href: api/RailSharp.OptionExtensions.html#RailSharp_OptionExtensions_Map__2_RailSharp_Option___0__System_Func___0___1__
+  commentId: M:RailSharp.OptionExtensions.Map``2(RailSharp.Option{``0},System.Func{``0,``1})
+  name.vb: Map(Of T, TDestination)(Option(Of T), Func(Of T, TDestination))
+  fullName: RailSharp.OptionExtensions.Map<T, TDestination>(RailSharp.Option<T>, System.Func<T, TDestination>)
+  fullName.vb: RailSharp.OptionExtensions.Map(Of T, TDestination)(RailSharp.Option(Of T), System.Func(Of T, TDestination))
+  nameWithType: OptionExtensions.Map<T, TDestination>(Option<T>, Func<T, TDestination>)
+  nameWithType.vb: OptionExtensions.Map(Of T, TDestination)(Option(Of T), Func(Of T, TDestination))
 - uid: RailSharp.OptionExtensions.Reduce*
   name: Reduce
   href: api/RailSharp.OptionExtensions.html#RailSharp_OptionExtensions_Reduce_
@@ -270,13 +270,13 @@ references:
   fullName.vb: RailSharp.OptionExtensions.Reduce(Of T)(RailSharp.Option(Of T), T)
   nameWithType: OptionExtensions.Reduce<T>(Option<T>, T)
   nameWithType.vb: OptionExtensions.Reduce(Of T)(Option(Of T), T)
-- uid: RailSharp.OptionExtensions.Reduce``1(RailSharp.Option{``0},Func{``0})
+- uid: RailSharp.OptionExtensions.Reduce``1(RailSharp.Option{``0},System.Func{``0})
   name: Reduce<T>(Option<T>, Func<T>)
-  href: api/RailSharp.OptionExtensions.html#RailSharp_OptionExtensions_Reduce__1_RailSharp_Option___0__Func___0__
-  commentId: M:RailSharp.OptionExtensions.Reduce``1(RailSharp.Option{``0},Func{``0})
+  href: api/RailSharp.OptionExtensions.html#RailSharp_OptionExtensions_Reduce__1_RailSharp_Option___0__System_Func___0__
+  commentId: M:RailSharp.OptionExtensions.Reduce``1(RailSharp.Option{``0},System.Func{``0})
   name.vb: Reduce(Of T)(Option(Of T), Func(Of T))
-  fullName: RailSharp.OptionExtensions.Reduce<T>(RailSharp.Option<T>, Func<T>)
-  fullName.vb: RailSharp.OptionExtensions.Reduce(Of T)(RailSharp.Option(Of T), Func(Of T))
+  fullName: RailSharp.OptionExtensions.Reduce<T>(RailSharp.Option<T>, System.Func<T>)
+  fullName.vb: RailSharp.OptionExtensions.Reduce(Of T)(RailSharp.Option(Of T), System.Func(Of T))
   nameWithType: OptionExtensions.Reduce<T>(Option<T>, Func<T>)
   nameWithType.vb: OptionExtensions.Reduce(Of T)(Option(Of T), Func(Of T))
 - uid: RailSharp.OptionExtensions.When*
@@ -286,13 +286,13 @@ references:
   isSpec: "True"
   fullName: RailSharp.OptionExtensions.When
   nameWithType: OptionExtensions.When
-- uid: RailSharp.OptionExtensions.When``1(RailSharp.Option{``0},Func{``0,System.Boolean})
+- uid: RailSharp.OptionExtensions.When``1(RailSharp.Option{``0},System.Func{``0,System.Boolean})
   name: When<T>(Option<T>, Func<T, Boolean>)
-  href: api/RailSharp.OptionExtensions.html#RailSharp_OptionExtensions_When__1_RailSharp_Option___0__Func___0_System_Boolean__
-  commentId: M:RailSharp.OptionExtensions.When``1(RailSharp.Option{``0},Func{``0,System.Boolean})
+  href: api/RailSharp.OptionExtensions.html#RailSharp_OptionExtensions_When__1_RailSharp_Option___0__System_Func___0_System_Boolean__
+  commentId: M:RailSharp.OptionExtensions.When``1(RailSharp.Option{``0},System.Func{``0,System.Boolean})
   name.vb: When(Of T)(Option(Of T), Func(Of T, Boolean))
-  fullName: RailSharp.OptionExtensions.When<T>(RailSharp.Option<T>, Func<T, System.Boolean>)
-  fullName.vb: RailSharp.OptionExtensions.When(Of T)(RailSharp.Option(Of T), Func(Of T, System.Boolean))
+  fullName: RailSharp.OptionExtensions.When<T>(RailSharp.Option<T>, System.Func<T, System.Boolean>)
+  fullName.vb: RailSharp.OptionExtensions.When(Of T)(RailSharp.Option(Of T), System.Func(Of T, System.Boolean))
   nameWithType: OptionExtensions.When<T>(Option<T>, Func<T, Boolean>)
   nameWithType.vb: OptionExtensions.When(Of T)(Option(Of T), Func(Of T, Boolean))
 - uid: RailSharp.Result
@@ -394,22 +394,22 @@ references:
   fullName.vb: RailSharp.Result(Of TFailure, TSuccess).Catch
   nameWithType: Result<TFailure, TSuccess>.Catch
   nameWithType.vb: Result(Of TFailure, TSuccess).Catch
-- uid: RailSharp.Result`2.Catch``1(Func{``0,`1})
+- uid: RailSharp.Result`2.Catch``1(System.Func{``0,`1})
   name: Catch<TCatch>(Func<TCatch, TSuccess>)
-  href: api/RailSharp.Result-2.html#RailSharp_Result_2_Catch__1_Func___0__1__
-  commentId: M:RailSharp.Result`2.Catch``1(Func{``0,`1})
+  href: api/RailSharp.Result-2.html#RailSharp_Result_2_Catch__1_System_Func___0__1__
+  commentId: M:RailSharp.Result`2.Catch``1(System.Func{``0,`1})
   name.vb: Catch(Of TCatch)(Func(Of TCatch, TSuccess))
-  fullName: RailSharp.Result<TFailure, TSuccess>.Catch<TCatch>(Func<TCatch, TSuccess>)
-  fullName.vb: RailSharp.Result(Of TFailure, TSuccess).Catch(Of TCatch)(Func(Of TCatch, TSuccess))
+  fullName: RailSharp.Result<TFailure, TSuccess>.Catch<TCatch>(System.Func<TCatch, TSuccess>)
+  fullName.vb: RailSharp.Result(Of TFailure, TSuccess).Catch(Of TCatch)(System.Func(Of TCatch, TSuccess))
   nameWithType: Result<TFailure, TSuccess>.Catch<TCatch>(Func<TCatch, TSuccess>)
   nameWithType.vb: Result(Of TFailure, TSuccess).Catch(Of TCatch)(Func(Of TCatch, TSuccess))
-- uid: RailSharp.Result`2.Catch``1(Func{``0,System.Boolean},Func{``0,`1})
+- uid: RailSharp.Result`2.Catch``1(System.Func{``0,System.Boolean},System.Func{``0,`1})
   name: Catch<TCatch>(Func<TCatch, Boolean>, Func<TCatch, TSuccess>)
-  href: api/RailSharp.Result-2.html#RailSharp_Result_2_Catch__1_Func___0_System_Boolean__Func___0__1__
-  commentId: M:RailSharp.Result`2.Catch``1(Func{``0,System.Boolean},Func{``0,`1})
+  href: api/RailSharp.Result-2.html#RailSharp_Result_2_Catch__1_System_Func___0_System_Boolean__System_Func___0__1__
+  commentId: M:RailSharp.Result`2.Catch``1(System.Func{``0,System.Boolean},System.Func{``0,`1})
   name.vb: Catch(Of TCatch)(Func(Of TCatch, Boolean), Func(Of TCatch, TSuccess))
-  fullName: RailSharp.Result<TFailure, TSuccess>.Catch<TCatch>(Func<TCatch, System.Boolean>, Func<TCatch, TSuccess>)
-  fullName.vb: RailSharp.Result(Of TFailure, TSuccess).Catch(Of TCatch)(Func(Of TCatch, System.Boolean), Func(Of TCatch, TSuccess))
+  fullName: RailSharp.Result<TFailure, TSuccess>.Catch<TCatch>(System.Func<TCatch, System.Boolean>, System.Func<TCatch, TSuccess>)
+  fullName.vb: RailSharp.Result(Of TFailure, TSuccess).Catch(Of TCatch)(System.Func(Of TCatch, System.Boolean), System.Func(Of TCatch, TSuccess))
   nameWithType: Result<TFailure, TSuccess>.Catch<TCatch>(Func<TCatch, Boolean>, Func<TCatch, TSuccess>)
   nameWithType.vb: Result(Of TFailure, TSuccess).Catch(Of TCatch)(Func(Of TCatch, Boolean), Func(Of TCatch, TSuccess))
 - uid: RailSharp.Result`2.op_Implicit(`0)~RailSharp.Result{`0,`1}
@@ -471,22 +471,22 @@ references:
   isSpec: "True"
   fullName: RailSharp.ResultExtensions.Catch
   nameWithType: ResultExtensions.Catch
-- uid: RailSharp.ResultExtensions.Catch``2(RailSharp.Result{``0,``1},Func{``0,``1})
+- uid: RailSharp.ResultExtensions.Catch``2(RailSharp.Result{``0,``1},System.Func{``0,``1})
   name: Catch<TFailure, TSuccess>(Result<TFailure, TSuccess>, Func<TFailure, TSuccess>)
-  href: api/RailSharp.ResultExtensions.html#RailSharp_ResultExtensions_Catch__2_RailSharp_Result___0___1__Func___0___1__
-  commentId: M:RailSharp.ResultExtensions.Catch``2(RailSharp.Result{``0,``1},Func{``0,``1})
+  href: api/RailSharp.ResultExtensions.html#RailSharp_ResultExtensions_Catch__2_RailSharp_Result___0___1__System_Func___0___1__
+  commentId: M:RailSharp.ResultExtensions.Catch``2(RailSharp.Result{``0,``1},System.Func{``0,``1})
   name.vb: Catch(Of TFailure, TSuccess)(Result(Of TFailure, TSuccess), Func(Of TFailure, TSuccess))
-  fullName: RailSharp.ResultExtensions.Catch<TFailure, TSuccess>(RailSharp.Result<TFailure, TSuccess>, Func<TFailure, TSuccess>)
-  fullName.vb: RailSharp.ResultExtensions.Catch(Of TFailure, TSuccess)(RailSharp.Result(Of TFailure, TSuccess), Func(Of TFailure, TSuccess))
+  fullName: RailSharp.ResultExtensions.Catch<TFailure, TSuccess>(RailSharp.Result<TFailure, TSuccess>, System.Func<TFailure, TSuccess>)
+  fullName.vb: RailSharp.ResultExtensions.Catch(Of TFailure, TSuccess)(RailSharp.Result(Of TFailure, TSuccess), System.Func(Of TFailure, TSuccess))
   nameWithType: ResultExtensions.Catch<TFailure, TSuccess>(Result<TFailure, TSuccess>, Func<TFailure, TSuccess>)
   nameWithType.vb: ResultExtensions.Catch(Of TFailure, TSuccess)(Result(Of TFailure, TSuccess), Func(Of TFailure, TSuccess))
-- uid: RailSharp.ResultExtensions.Catch``2(RailSharp.Result{``0,``1},Func{``0,System.Boolean},Func{``0,``1})
+- uid: RailSharp.ResultExtensions.Catch``2(RailSharp.Result{``0,``1},System.Func{``0,System.Boolean},System.Func{``0,``1})
   name: Catch<TFailure, TSuccess>(Result<TFailure, TSuccess>, Func<TFailure, Boolean>, Func<TFailure, TSuccess>)
-  href: api/RailSharp.ResultExtensions.html#RailSharp_ResultExtensions_Catch__2_RailSharp_Result___0___1__Func___0_System_Boolean__Func___0___1__
-  commentId: M:RailSharp.ResultExtensions.Catch``2(RailSharp.Result{``0,``1},Func{``0,System.Boolean},Func{``0,``1})
+  href: api/RailSharp.ResultExtensions.html#RailSharp_ResultExtensions_Catch__2_RailSharp_Result___0___1__System_Func___0_System_Boolean__System_Func___0___1__
+  commentId: M:RailSharp.ResultExtensions.Catch``2(RailSharp.Result{``0,``1},System.Func{``0,System.Boolean},System.Func{``0,``1})
   name.vb: Catch(Of TFailure, TSuccess)(Result(Of TFailure, TSuccess), Func(Of TFailure, Boolean), Func(Of TFailure, TSuccess))
-  fullName: RailSharp.ResultExtensions.Catch<TFailure, TSuccess>(RailSharp.Result<TFailure, TSuccess>, Func<TFailure, System.Boolean>, Func<TFailure, TSuccess>)
-  fullName.vb: RailSharp.ResultExtensions.Catch(Of TFailure, TSuccess)(RailSharp.Result(Of TFailure, TSuccess), Func(Of TFailure, System.Boolean), Func(Of TFailure, TSuccess))
+  fullName: RailSharp.ResultExtensions.Catch<TFailure, TSuccess>(RailSharp.Result<TFailure, TSuccess>, System.Func<TFailure, System.Boolean>, System.Func<TFailure, TSuccess>)
+  fullName.vb: RailSharp.ResultExtensions.Catch(Of TFailure, TSuccess)(RailSharp.Result(Of TFailure, TSuccess), System.Func(Of TFailure, System.Boolean), System.Func(Of TFailure, TSuccess))
   nameWithType: ResultExtensions.Catch<TFailure, TSuccess>(Result<TFailure, TSuccess>, Func<TFailure, Boolean>, Func<TFailure, TSuccess>)
   nameWithType.vb: ResultExtensions.Catch(Of TFailure, TSuccess)(Result(Of TFailure, TSuccess), Func(Of TFailure, Boolean), Func(Of TFailure, TSuccess))
 - uid: RailSharp.ResultExtensions.Map*
@@ -496,22 +496,22 @@ references:
   isSpec: "True"
   fullName: RailSharp.ResultExtensions.Map
   nameWithType: ResultExtensions.Map
-- uid: RailSharp.ResultExtensions.Map``2(RailSharp.Result{``0},Func{``1})
+- uid: RailSharp.ResultExtensions.Map``2(RailSharp.Result{``0},System.Func{``1})
   name: Map<TFailure, TSuccess>(Result<TFailure>, Func<TSuccess>)
-  href: api/RailSharp.ResultExtensions.html#RailSharp_ResultExtensions_Map__2_RailSharp_Result___0__Func___1__
-  commentId: M:RailSharp.ResultExtensions.Map``2(RailSharp.Result{``0},Func{``1})
+  href: api/RailSharp.ResultExtensions.html#RailSharp_ResultExtensions_Map__2_RailSharp_Result___0__System_Func___1__
+  commentId: M:RailSharp.ResultExtensions.Map``2(RailSharp.Result{``0},System.Func{``1})
   name.vb: Map(Of TFailure, TSuccess)(Result(Of TFailure), Func(Of TSuccess))
-  fullName: RailSharp.ResultExtensions.Map<TFailure, TSuccess>(RailSharp.Result<TFailure>, Func<TSuccess>)
-  fullName.vb: RailSharp.ResultExtensions.Map(Of TFailure, TSuccess)(RailSharp.Result(Of TFailure), Func(Of TSuccess))
+  fullName: RailSharp.ResultExtensions.Map<TFailure, TSuccess>(RailSharp.Result<TFailure>, System.Func<TSuccess>)
+  fullName.vb: RailSharp.ResultExtensions.Map(Of TFailure, TSuccess)(RailSharp.Result(Of TFailure), System.Func(Of TSuccess))
   nameWithType: ResultExtensions.Map<TFailure, TSuccess>(Result<TFailure>, Func<TSuccess>)
   nameWithType.vb: ResultExtensions.Map(Of TFailure, TSuccess)(Result(Of TFailure), Func(Of TSuccess))
-- uid: RailSharp.ResultExtensions.Map``3(RailSharp.Result{``0,``1},Func{``1,``2})
+- uid: RailSharp.ResultExtensions.Map``3(RailSharp.Result{``0,``1},System.Func{``1,``2})
   name: Map<TFailure, TSuccess, TNewSuccess>(Result<TFailure, TSuccess>, Func<TSuccess, TNewSuccess>)
-  href: api/RailSharp.ResultExtensions.html#RailSharp_ResultExtensions_Map__3_RailSharp_Result___0___1__Func___1___2__
-  commentId: M:RailSharp.ResultExtensions.Map``3(RailSharp.Result{``0,``1},Func{``1,``2})
+  href: api/RailSharp.ResultExtensions.html#RailSharp_ResultExtensions_Map__3_RailSharp_Result___0___1__System_Func___1___2__
+  commentId: M:RailSharp.ResultExtensions.Map``3(RailSharp.Result{``0,``1},System.Func{``1,``2})
   name.vb: Map(Of TFailure, TSuccess, TNewSuccess)(Result(Of TFailure, TSuccess), Func(Of TSuccess, TNewSuccess))
-  fullName: RailSharp.ResultExtensions.Map<TFailure, TSuccess, TNewSuccess>(RailSharp.Result<TFailure, TSuccess>, Func<TSuccess, TNewSuccess>)
-  fullName.vb: RailSharp.ResultExtensions.Map(Of TFailure, TSuccess, TNewSuccess)(RailSharp.Result(Of TFailure, TSuccess), Func(Of TSuccess, TNewSuccess))
+  fullName: RailSharp.ResultExtensions.Map<TFailure, TSuccess, TNewSuccess>(RailSharp.Result<TFailure, TSuccess>, System.Func<TSuccess, TNewSuccess>)
+  fullName.vb: RailSharp.ResultExtensions.Map(Of TFailure, TSuccess, TNewSuccess)(RailSharp.Result(Of TFailure, TSuccess), System.Func(Of TSuccess, TNewSuccess))
   nameWithType: ResultExtensions.Map<TFailure, TSuccess, TNewSuccess>(Result<TFailure, TSuccess>, Func<TSuccess, TNewSuccess>)
   nameWithType.vb: ResultExtensions.Map(Of TFailure, TSuccess, TNewSuccess)(Result(Of TFailure, TSuccess), Func(Of TSuccess, TNewSuccess))
 - uid: RailSharp.ResultExtensions.ThrowIfFailure*
@@ -530,12 +530,12 @@ references:
   fullName.vb: RailSharp.ResultExtensions.ThrowIfFailure(Of TFailure, TSuccess)(RailSharp.Result(Of TFailure, TSuccess))
   nameWithType: ResultExtensions.ThrowIfFailure<TFailure, TSuccess>(Result<TFailure, TSuccess>)
   nameWithType.vb: ResultExtensions.ThrowIfFailure(Of TFailure, TSuccess)(Result(Of TFailure, TSuccess))
-- uid: RailSharp.ResultExtensions.ThrowIfFailure``2(RailSharp.Result{``0,``1},Func{``0,Exception})
+- uid: RailSharp.ResultExtensions.ThrowIfFailure``2(RailSharp.Result{``0,``1},System.Func{``0,System.Exception})
   name: ThrowIfFailure<TFailure, TSuccess>(Result<TFailure, TSuccess>, Func<TFailure, Exception>)
-  href: api/RailSharp.ResultExtensions.html#RailSharp_ResultExtensions_ThrowIfFailure__2_RailSharp_Result___0___1__Func___0_Exception__
-  commentId: M:RailSharp.ResultExtensions.ThrowIfFailure``2(RailSharp.Result{``0,``1},Func{``0,Exception})
+  href: api/RailSharp.ResultExtensions.html#RailSharp_ResultExtensions_ThrowIfFailure__2_RailSharp_Result___0___1__System_Func___0_System_Exception__
+  commentId: M:RailSharp.ResultExtensions.ThrowIfFailure``2(RailSharp.Result{``0,``1},System.Func{``0,System.Exception})
   name.vb: ThrowIfFailure(Of TFailure, TSuccess)(Result(Of TFailure, TSuccess), Func(Of TFailure, Exception))
-  fullName: RailSharp.ResultExtensions.ThrowIfFailure<TFailure, TSuccess>(RailSharp.Result<TFailure, TSuccess>, Func<TFailure, Exception>)
-  fullName.vb: RailSharp.ResultExtensions.ThrowIfFailure(Of TFailure, TSuccess)(RailSharp.Result(Of TFailure, TSuccess), Func(Of TFailure, Exception))
+  fullName: RailSharp.ResultExtensions.ThrowIfFailure<TFailure, TSuccess>(RailSharp.Result<TFailure, TSuccess>, System.Func<TFailure, System.Exception>)
+  fullName.vb: RailSharp.ResultExtensions.ThrowIfFailure(Of TFailure, TSuccess)(RailSharp.Result(Of TFailure, TSuccess), System.Func(Of TFailure, System.Exception))
   nameWithType: ResultExtensions.ThrowIfFailure<TFailure, TSuccess>(Result<TFailure, TSuccess>, Func<TFailure, Exception>)
   nameWithType.vb: ResultExtensions.ThrowIfFailure(Of TFailure, TSuccess)(Result(Of TFailure, TSuccess), Func(Of TFailure, Exception))
