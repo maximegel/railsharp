@@ -31,6 +31,9 @@
                             <img alt="Nuget" src="https://img.shields.io/nuget/v/railsharp.svg?style=flat-square">
                         </a>
                         <a href="https://www.nuget.org/packages/RailSharp">
+                            <img alt="Nuget (with prereleases)" src="https://img.shields.io/nuget/vpre/railsharp.svg?label=nuget%20%28with%20prereleases%29">
+                        </a>
+                        <a href="https://www.nuget.org/packages/RailSharp">
                             <img alt="Nuget downloads" src="https://img.shields.io/nuget/dt/railsharp.svg?style=flat-square">
                         </a>
                         <a href="https://github.com/softframe/railsharp/blob/master/LICENSE">
